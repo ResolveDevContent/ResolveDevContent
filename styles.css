@@ -444,7 +444,7 @@ body > header {
 
 /*----------FOOTER----------*/
 
-body > footer {
+.footer {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -452,7 +452,7 @@ body > footer {
     background-color: #eee;
 }
 
-body > footer > section {
+.footer > section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -461,39 +461,39 @@ body > footer > section {
     padding: 2em;
 }
 
-body > footer > section .footer-brand {
+.footer > section .footer-brand {
     width: 15em;
 }
 
-body > footer .footer-links {
+.footer .footer-links {
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 2em;
 }
 
-body > footer .footer-links li ul {
+.footer .footer-links li ul {
     margin-top: 0.5em;
 }
 
-body > footer .footer-links li:last-child ul {
+.footer .footer-links li:last-child ul {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
 }
 
-body > footer .footer-links img {
+.footer .footer-links img {
     width: 2em;
 }
 
-body > footer .copyright {
+.footer .copyright {
     width: 100%;
     text-align: center;
     padding: 0.5em 0;
     background-color: black;
 }
 
-body > footer .copyright span {
+.footer .copyright span {
     width: 100%;
     color: white;
 }
