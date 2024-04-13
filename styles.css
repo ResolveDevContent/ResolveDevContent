@@ -158,3 +158,188 @@ header {
     background-color: blue;
     border-radius: 0.5em;
 }
+
+/*----------SERVICIOS----------*/
+
+#servicios,
+#sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2em;
+}
+
+#servicios > h3 {
+    font-weight: bolder;
+    font-size: 2em;
+    margin: 1em 0;
+}
+
+#servicios > ul {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1em;
+}
+
+#servicios .item {
+    background-color: whitesmoke;
+    padding: 2em;
+    border-radius: 1em;
+    min-height: 16em;
+}
+
+#servicios .item > header {
+    position: static;
+    margin-bottom: 1em;
+    font-weight: bolder;
+    font-size: 1.125em;
+}
+
+#servicios .item article > ul {
+    list-style: disc;
+    padding-left: .5em;
+}
+
+#servicios .item article > ul > li {
+    line-height: 1.325em;
+}
+
+#servicios .item > footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#servicios .item > footer > a {
+    background-color: blue;
+    padding: .5em 1em;
+    border-radius: .5em;
+    font-weight: 600;
+}
+
+/*----------SOBRE NOSOTROS----------*/
+
+#sobre-nosotros > article {
+    display: flex;
+    align-items: center;
+}
+
+#sobre-nosotros > article > aside {
+    width: 35%;
+    padding: 1em;
+}
+
+#sobre-nosotros > article > aside > img {
+    width: 100%;
+    height: auto;
+}
+
+#sobre-nosotros > article > div {
+    flex: 1;
+    padding: 1em;
+}
+
+#sobre-nosotros > article > div > h3 {
+    font-weight: bolder;
+    font-size: 1.75em;
+    margin: 1em 0 .5em 0;
+}
+
+#sobre-nosotros > footer{
+    width: 100%;
+    margin: 2em 0;
+}
+
+#sobre-nosotros > footer > ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sobre-nosotros > footer > ul > li > a {
+    color: grey;
+    margin: 1em;
+}
+
+/*----------CONTACTO----------*/
+
+#contacto {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    margin: 2em;
+}
+
+#contacto > aside {
+    width: 35%;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+#contacto > aside > ul > li {
+    padding: 1em .5em;
+    background-color: rgba(0, 183, 255, 0.5);
+    margin: 1em 0;
+}
+
+#contacto > article {
+    flex: 1;
+    padding: 1em;
+    margin-left: 4em;
+}
+
+#contacto > article > div {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+#contacto > article > div > input,
+#contacto > article > div > textarea {
+    width: 20em;
+    padding: 1em 2em;
+    margin: .5em 0;
+    border-radius: .5em;
+    border: 1px solid blue;
+}
+
+#contacto > article > div > input::placeholder,
+#contacto > article > div > textarea::placeholder {
+    color: blue;
+}
+
+#contacto > article > div > a {
+    background-color: blue;
+    padding: .5em 1em;
+    border-radius: .5em;
+    font-weight: 600;
+    width: 20em;
+}
+
+/*----------FOOTER----------*/
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer > div .footer-brand {
+    width: 15em;
+}
+
+
+
+
+
