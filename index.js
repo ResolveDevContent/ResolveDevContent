@@ -1,5 +1,11 @@
 const btnEnviar = document.querySelector('[data-btn]'),
-      navbar = document.querySelector('.navbar');
+      navbar = document.querySelector('.navbar'),
+      info = {
+          nombre : '',
+          asunto : '',
+          message: '',
+          mail   : ''  
+        };
 
 let flag = true;
 window.addEventListener('scroll', () => {
@@ -11,29 +17,18 @@ window.addEventListener('scroll', () => {
 
 }, true);
 
-btnEnviar.addEventListener('click', event => {
+
+input.addEventListener('change', event => {
     event.preventDefault();
 
-    const form = btnEnviar.closest('[data-form]'),
-          info = {
-            nombre : '',
-            asunto : '',
-            message: '',
-            mail   : ''  
-          },
+    setTimeout(() => {
+        info[input.name] = input.value;     
+    }, 500);
+
+    const form     = document.closest('[data-form]'),
           invalids = form.querySelectorAll('input:required:invalid,textarea:required:invalid');
 
-    if(invalids.length > 0) {
-        const error = document.querySelector('[data-error]');
-        error.textContent = 'Complete todos los campos para poder enviar el mail.';
-        return;
-    }
-          
-    const data = form.querySelectorAll('input[type="text"],input[type="radio"]:checked,textarea');
-
-    Array.from(data).forEach(item => {
-        info[item.name] = item.value;
-    });
+    if(invalids.length > 0) return;
 
     let mail;
 
@@ -49,4 +44,5 @@ btnEnviar.addEventListener('click', event => {
     btnEnviar.setAttribute('href', encodeURI(mail))
     btnEnviar.classList.remove('disabled');
 });
+
 
