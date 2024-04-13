@@ -5,7 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="./styles.css">
 
-        <title>Resolve Dev - Web Development & Solutions techonologies.</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
+        <title>Resolve Dev - Desarrollo web y soluciones tecnol&oacute;gicas.</title>
     </head>
     <body>
 
@@ -24,10 +28,10 @@
                     <li>
                         <a href="#sobre-nosotros">Sobre Nosotros</a>
                     </li>
-                    <li>
-                        <a href="#contacto">Contacto</a>
-                    </li>
                 </ul>
+                <div class="navbar-buttons">
+                    <a href="#contacto">Contacto</a>
+                </div>
             </nav>
         </header>
 
@@ -40,14 +44,14 @@
                             <article>
                                 <div class="home-text">
                                     <em>Resolve Dev</em>
-                                    <span>Web Development & Solutions techonologies.</span>
+                                    <span>Desarrollo Web & Soluciones Tecnológicas.</span>
                                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                                         Similique eligendi qui voluptas, quisquam id ut repudiandae incidunt doloribus dicta,
                                          labore deserunt aspernatur minima sequi veritatis harum accusamus, eveniet optio alias.
                                     </p>
                                 </div>
                                 <footer>
-                                    <a href="#">¿Necesita un proyecto?</a>
+                                    <a href="#servicios">¿Necesita un proyecto?</a>
                                 </footer>
                             </article>
                         </figcaption>
@@ -59,7 +63,7 @@
         <section id="servicios">
             <header>
                 <h3>Servicios</h3>
-                <span>Determina Cual Servicio Se Adapta A Ti</span>
+                <span>Determin&aacute; cu&aacute;l servicio se adapta a tus necesidades.</span>
             </header>
             <ul>
                 <li class="item">
@@ -180,9 +184,18 @@
                     <h3>Contactanos!</h3>
                     <div data-form>
                         <input type="text" name="nombre" placeholder="Nombre" required>
-                        <!-- <input type="email" name="email" placeholder="Email"> -->
                         <input type="text" name="asunto" placeholder="Asunto" required>
                         <textarea cols="10" rows="10" name="message" placeholder="Mensaje..." required></textarea>
+                        <div>
+                            <label>
+                                <input type="radio" name="mail" value="gmail">
+                                Gmail
+                            </label>
+                            <label>
+                                <input type="radio" name="mail" value="hotmail">
+                                Hotmail
+                            </label>
+                        </div>
                         <a href="#" data-btn>Enviar</a>
                     </div>
                     <em data-error></em>
