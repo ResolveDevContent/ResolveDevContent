@@ -178,13 +178,14 @@
                 </aside>
                 <article>
                     <h3>Contactanos!</h3>
-                    <div>
-                        <input type="text" name="nombre" placeholder="Nombre">
-                        <input type="email" name="email" placeholder="Email">
-                        <input type="text" name="asunto" placeholder="Asunto">
-                        <textarea cols="10" rows="10" name="message" placeholder="Mensaje..."></textarea>
-                        <a href="#">Enviar</a>
+                    <div data-form>
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <!-- <input type="email" name="email" placeholder="Email"> -->
+                        <input type="text" name="asunto" placeholder="Asunto" required>
+                        <textarea cols="10" rows="10" name="message" placeholder="Mensaje..." required></textarea>
+                        <a href="#" data-btn>Enviar</a>
                     </div>
+                    <em data-error></em>
                 </article>
             </section>
         </section>
