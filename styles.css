@@ -21,12 +21,25 @@ ul{
     padding: 0;
 }
 
+section {
+    position: relative;
+    z-index: 16;
+}
+
+#servicios,
+#sobre-nosotros,
+#contacto {
+    margin: 2em;
+}
 
 /*----------NAVBAR STYLES----------*/
 
 body > header {
     position: absolute;
-    inset: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 32;
 }
 
 .navbar {
@@ -37,9 +50,11 @@ body > header {
     background-color: #a0a0a0;
     transition: 1s all;
 
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1;
+    left: 0;
+    right: 0;
+    z-index: 32;
 }
 
 .navbar.top {
@@ -174,7 +189,6 @@ body > header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    margin: 2em;
 }
 
 #servicios > header {
@@ -236,9 +250,14 @@ body > header {
     padding: .5em 1em;
     border-radius: .5em;
     font-weight: 600;
+    color: white;
 }
 
 /*----------SOBRE NOSOTROS----------*/
+
+#sobre-nosotros{
+    gap: 4em;
+}
 
 #sobre-nosotros > article {
     display: flex;
@@ -277,18 +296,46 @@ body > header {
 
 #sobre-nosotros > footer{
     width: 100%;
-    margin: 2em 0;
 }
 
-#sobre-nosotros > footer > ul {
+#sobre-nosotros .personas {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
+#sobre-nosotros .personas > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#sobre-nosotros .personas > li > header {
+    width: 100%;
+}
+
+#sobre-nosotros .personas > li > header > img {
+    display: block;
+    width: 100%;
+    height: 15em;
+    background-color: gray;
+}
+
+#sobre-nosotros .personas article {
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    gap: 0.5em;
+}
+
+#sobre-nosotros .personas article span {
+    max-width: 15em;
+}
+
 #sobre-nosotros > footer > ul > li > a {
     color: grey;
-    margin: 1em;
+    width: 100%;
 }
 
 /*----------CONTACTO----------*/
@@ -297,7 +344,6 @@ body > header {
     display: flex;
     align-items: start;
     justify-content: space-between;
-    margin: 2em;
     flex-direction: column;
 }
 
@@ -312,11 +358,11 @@ body > header {
     align-items: start;
     justify-content: space-between;
     width: 100%;
+    margin-block: 2em;
 }
 
 #contacto > section aside {
     width: 35%;
-    padding: 4em 0;
 }
 
 #contacto > section aside > ul > li {
@@ -367,24 +413,59 @@ body > header {
 
 /*----------FOOTER----------*/
 
-footer {
+body > footer {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: #eee;
 }
 
-footer > div {
+body > footer > section {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    gap: 2em;
+    width: 100%;
+    padding: 2em;
 }
 
-footer > div .footer-brand {
+body > footer > section .footer-brand {
     width: 15em;
 }
 
+body > footer .footer-links {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 2em;
+}
 
+body > footer .footer-links li ul {
+    margin-top: 0.5em;
+}
+
+body > footer .footer-links li:last-child ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+body > footer .footer-links img {
+    width: 2em;
+}
+
+body > footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: black;
+}
+
+body > footer .copyright span {
+    width: 100%;
+    color: white;
+}
 
 
 
