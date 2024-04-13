@@ -7,6 +7,7 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif; /* cambiar */
+    position: relative;
 }
 
 a {
@@ -23,7 +24,7 @@ ul{
 
 /*----------NAVBAR STYLES----------*/
 
-header {
+body > header {
     position: absolute;
     inset: 0;
 }
@@ -33,10 +34,16 @@ header {
     align-items: center;
     justify-content: space-between;
     padding: 1.5em;
+    background-color: #a0a0a0;
+    transition: 1s all;
 
     position: sticky;
     top: 0;
     z-index: 1;
+}
+
+.navbar.top {
+    background-color: transparent;
 }
 
 .navbar ul {
@@ -96,23 +103,23 @@ header {
 
 /*----------HOME----------*/
 
-.home{
+#inicio{
     position: relative;
 }
 
-.home figure {
+#inicio figure {
     position: relative;
     width: 100%;
     height: 100vh;
 }
 
-.home figure img {
+#inicio figure img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.home figcaption {
+#inicio figcaption {
     position: absolute;
     inset: 0;
     display: flex;
@@ -123,14 +130,14 @@ header {
     backdrop-filter: brightness(.5);
 }
 
-.home figcaption article {
+#inicio figcaption article {
     max-width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2.5em;
 }
 
-.home .home-text {
+#inicio .home-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,19 +146,19 @@ header {
     color: white;
 }
 
-.home .home-text span {
+#inicio .home-text span {
     font-size: 4em;
 }
 
-.home .home-text em {
+#inicio .home-text em {
     font-size: 2em;
 }
 
-.home .home-text p {
+#inicio .home-text p {
     font-size: 1.125em;
 }
 
-.home figcaption article footer a{
+#inicio figcaption article footer a{
     padding: 0.5em;
     text-transform: uppercase;
     color: white;
@@ -170,18 +177,23 @@ header {
     margin: 2em;
 }
 
-#servicios > h3 {
+#servicios > header {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#servicios > header h3 {
     font-weight: bolder;
     font-size: 2em;
-    margin: 1em 0;
 }
 
 #servicios > ul {
     width: 100%;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-evenly;
     padding: 1em;
+    margin-bottom: 2em;
 }
 
 #servicios .item {
@@ -189,6 +201,9 @@ header {
     padding: 2em;
     border-radius: 1em;
     min-height: 16em;
+
+    display: flex;
+    flex-direction: column;
 }
 
 #servicios .item > header {
@@ -196,6 +211,10 @@ header {
     margin-bottom: 1em;
     font-weight: bolder;
     font-size: 1.125em;
+}
+
+#servicios .item article{
+    flex-grow: 1;
 }
 
 #servicios .item article > ul {
@@ -227,7 +246,7 @@ header {
 }
 
 #sobre-nosotros > article > aside {
-    width: 35%;
+    width: 50%;
     padding: 1em;
 }
 
@@ -241,10 +260,19 @@ header {
     padding: 1em;
 }
 
-#sobre-nosotros > article > div > h3 {
+#sobre-nosotros > article > div > header {
+    padding: 2em 0; 
+}
+
+#sobre-nosotros > article > div > header span {
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+#sobre-nosotros > article > div > header h3 {
     font-weight: bolder;
     font-size: 1.75em;
-    margin: 1em 0 .5em 0;
+    margin-top: 0.25em;
 }
 
 #sobre-nosotros > footer{
@@ -268,29 +296,44 @@ header {
 #contacto {
     display: flex;
     align-items: start;
-    justify-content: center;
+    justify-content: space-between;
     margin: 2em;
+    flex-direction: column;
 }
 
-#contacto > aside {
+#contacto > header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#contacto > section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#contacto > section aside {
     width: 35%;
-    padding: 1em;
-    margin-top: 2em;
+    padding: 4em 0;
 }
 
-#contacto > aside > ul > li {
+#contacto > section aside > ul > li {
     padding: 1em .5em;
     background-color: rgba(0, 183, 255, 0.5);
     margin: 1em 0;
 }
 
-#contacto > article {
-    flex: 1;
-    padding: 1em;
-    margin-left: 4em;
+#contacto > section article {
+    /* flex: 1; */
+    /* margin-left: 4em; */
+    padding: 4em;
+    background-color: #eee;
+    border-radius: 1em;
 }
 
-#contacto > article > div {
+#contacto > section article > div {
     display: flex;
     align-items: start;
     justify-content: center;
@@ -298,26 +341,28 @@ header {
     margin-top: 1em;
 }
 
-#contacto > article > div > input,
-#contacto > article > div > textarea {
-    width: 20em;
+#contacto > section article > div > input,
+#contacto > section article > div > textarea {
+    width: 100%;
     padding: 1em 2em;
     margin: .5em 0;
     border-radius: .5em;
     border: 1px solid blue;
 }
 
-#contacto > article > div > input::placeholder,
-#contacto > article > div > textarea::placeholder {
+#contacto > section article > div > input::placeholder,
+#contacto > section article > div > textarea::placeholder {
     color: blue;
 }
 
-#contacto > article > div > a {
+#contacto > section article > div > a {
     background-color: blue;
     padding: .5em 1em;
     border-radius: .5em;
     font-weight: 600;
     width: 20em;
+    text-align: center;
+    color: white;
 }
 
 /*----------FOOTER----------*/

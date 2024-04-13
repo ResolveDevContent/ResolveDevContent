@@ -10,7 +10,7 @@
     <body>
 
         <header>
-            <nav class="navbar">
+            <nav class="navbar top">
                 <div class="navbar-logo">
                     <a href="#">Logo</a>
                 </div>
@@ -31,7 +31,7 @@
             </nav>
         </header>
 
-        <section id="inicio" class="home">
+        <section id="inicio">
             <ul>
                 <li>
                     <figure>
@@ -57,7 +57,10 @@
         </section>
 
         <section id="servicios">
-            <h3>servicios</h3>
+            <header>
+                <h3>Servicios</h3>
+                <span>Determina Cual Servicio Se Adapta A Ti</span>
+            </header>
             <ul>
                 <li class="item">
                     <header>Plan Basico</header>
@@ -104,6 +107,9 @@
                     </footer>
                 </li>
             </ul>
+            <footer>
+                <a href="#contacto">¿No estas seguro cual plan elegir? Contactate con nosotros.</a>
+            </footer>
         </section>
 
         <section id="sobre-nosotros">
@@ -112,7 +118,10 @@
                     <img src="" alt="logo">
                 </aside>
                 <div>
-                    <h3>Sobre Nosotros</h3>
+                    <header>
+                        <span>sobre nostros</span>
+                        <h3>¿Quiénes somos?</h3>
+                    </header>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis nam modi magni  eaque quidem, molestias ipsa molestiae magnam distinctio rerum exercitationem, quae atque nostrum aut ut delectus. Suscipit, repellendus harum.
                     </p>
                 </div>
@@ -130,31 +139,38 @@
         </section>
 
         <section id="contacto">
-            <aside>
-                <ul>
-                    <li>
-                        <a href="#">
-                            <i></i>
-                            <span>resolveinfo.dev@gmail.com</span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">
-                            <i></i>
-                            <span>resolve.dev</span>
-                        </a>
-                    </li>
-                </ul>
-            </aside>
-            <article>
-                <h3>Contactanos!</h3>
-                <div>
-                    <input type="text" name="nombre" placeholder="Nombre">
-                    <input type="text" name="asunto" placeholder="Asunto">
-                    <textarea cols="10" rows="10" name="message" placeholder="Mensaje..."></textarea>
-                    <a href="#">Enviar</a>
-                </div>
-            </article>
+            <header>
+                <h3>¡Contactanos!</h3>
+                <span>Nos comunicaremos con usted lo antes posible.</span>
+            </header>
+            <section>
+                <aside>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>resolveinfo.dev@gmail.com</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i></i>
+                                <span>resolve.dev</span>
+                            </a>
+                        </li>
+                    </ul>
+                </aside>
+                <article>
+                    <h3>Contactanos!</h3>
+                    <div>
+                        <input type="text" name="nombre" placeholder="Nombre">
+                        <input type="email" name="email" placeholder="Email">
+                        <input type="text" name="asunto" placeholder="Asunto">
+                        <textarea cols="10" rows="10" name="message" placeholder="Mensaje..."></textarea>
+                        <a href="#">Enviar</a>
+                    </div>
+                </article>
+            </section>
         </section>
 
         <footer>
