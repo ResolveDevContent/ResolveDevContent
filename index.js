@@ -18,7 +18,8 @@ btnEnviar.addEventListener('click', event => {
           info = {
             nombre : '',
             asunto : '',
-            message: ''
+            message: '',
+            mail   : ''  
           },
           invalids = form.querySelectorAll('input:required:invalid,textarea:required:invalid');
 
@@ -37,13 +38,15 @@ btnEnviar.addEventListener('click', event => {
     let mail;
 
     if(info.mail == "gmail") {
-        mail = `https://mail.google.com/mail/u/0/?fs=1&to=resolveinfo.dev@gmail.com&su=${encodeURI(info.asunto)}&body=${info.nombre}${encodeURI(info.message)}&tf=cm`;
+        mail = `https://mail.google.com/mail/u/0/?fs=1&to=resolveinfo.dev@gmail.com&su=${info.asunto}&body=${info.nombre}${info.message}&tf=cm`;
     }
 
     if(info.mail == "hotmail") {
-        mail = `mailto:resolveinfo.dev@gmail.com?Subject=${encodeURI(info.asunto)}&body=${info.nombre}${encodeURI(info.message)}`;
+        mail = `mailto:resolveinfo.dev@gmail.com?Subject=${info.asunto}&body=${info.nombre}${info.message}`;
     }
 
     console.log(mail)
+    btnEnviar.setAttribute('href', encodeURI(mail))
+    btnEnviar.classList.remove('disabled');
 });
 

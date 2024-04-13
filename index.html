@@ -182,13 +182,15 @@
                 </aside>
                 <article>
                     <h3>Contactanos!</h3>
+                    <span>Complete todos los campos para realizar el envio.</span>
                     <div data-form>
                         <input type="text" name="nombre" placeholder="Nombre" required>
                         <input type="text" name="asunto" placeholder="Asunto" required>
                         <textarea cols="10" rows="10" name="message" placeholder="Mensaje..." required></textarea>
                         <div>
+                            <em>Seleccione el mail a utilizar</em>
                             <label>
-                                <input type="radio" name="mail" value="gmail">
+                                <input type="radio" name="mail" value="gmail" checked>
                                 Gmail
                             </label>
                             <label>
@@ -196,7 +198,7 @@
                                 Hotmail
                             </label>
                         </div>
-                        <a href="#" data-btn>Enviar</a>
+                        <a href="#" data-btn class="disabled">Enviar</a>
                     </div>
                     <em data-error></em>
                 </article>
