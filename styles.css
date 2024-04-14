@@ -21,6 +21,12 @@ ul{
     padding: 0;
 }
 
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
 section {
     position: relative;
     z-index: 16;
@@ -106,12 +112,11 @@ body > header {
 }
 
 .navbar .navbar-logo {
-    width: 7em;
+    width: 13em;
 }
 
 .navbar .navbar-logo a{
-    color: white;   
-    padding: 0.5em;
+    display: flex;
 }
 
 .navbar .navbar-buttons a{
@@ -140,12 +145,6 @@ body > header {
     position: relative;
     width: 100%;
     height: 100vh;
-}
-
-#inicio figure img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
 }
 
 #inicio figcaption {
@@ -284,11 +283,6 @@ body > header {
     padding: 1em;
 }
 
-#sobre-nosotros > article > aside > img {
-    width: 100%;
-    height: auto;
-}
-
 #sobre-nosotros > article > div {
     flex: 1;
     padding: 1em;
@@ -332,7 +326,6 @@ body > header {
 
 #sobre-nosotros .personas > li > header > img {
     display: block;
-    width: 100%;
     height: 15em;
     background-color: gray;
 }
@@ -493,8 +486,6 @@ body > header {
     flex-direction: column;
     align-items: center;
 }
-
-.footer .footer-brand > img {}
 
 .footer .footer-brand > span {
     font-size: .75em;
