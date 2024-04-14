@@ -159,12 +159,12 @@
             </section>
     
             <section id="contacto">
-                <header>
-                    <h3>¡Contactanos!</h3>
-                    <span>Nos comunicaremos con usted lo antes posible.</span>
-                </header>
                 <section>
                     <aside>
+                        <header>
+                            <h3>¡Contactanos!</h3>
+                            <span>Nos comunicaremos con usted lo antes posible.</span>
+                        </header>
                         <ul>
                             <li>
                                 <a href="#">
@@ -181,26 +181,30 @@
                         </ul>
                     </aside>
                     <article>
-                        <h3>Contactanos!</h3>
-                        <span>Complete todos los campos para realizar el envio.</span>
-                        <div data-form>
-                            <input type="text" name="nombre" placeholder="Nombre" required>
-                            <input type="text" name="asunto" placeholder="Asunto" required>
-                            <textarea cols="10" rows="10" name="message" placeholder="Mensaje..." required></textarea>
-                            <div>
-                                <em>Seleccione el mail a utilizar</em>
-                                <label>
-                                    <input type="radio" name="mail" value="gmail" checked>
-                                    Gmail
-                                </label>
-                                <label>
-                                    <input type="radio" name="mail" value="hotmail">
-                                    Hotmail
-                                </label>
+                        <div class="form">
+                            <div data-form>
+                                <input type="text" name="nombre" placeholder="Nombre" required>
+                                <input type="text" name="asunto" placeholder="Asunto" required>
+                                <textarea cols="10" rows="10" name="message" placeholder="Mensaje..." required></textarea>
+                                <div class="mail">
+                                    <div>
+                                        <em>Seleccione el mail a utilizar</em>
+                                    </div>
+                                    <div>
+                                        <label>
+                                            <input type="radio" name="mail" value="gmail" checked>
+                                            Gmail
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="mail" value="hotmail">
+                                            Hotmail
+                                        </label>
+                                    </div>
+                                </div>
+                                <span>Complete todos los campos para realizar el envio.</span>
+                                <a href="#" data-btn class="disabled">Enviar</a>
                             </div>
-                            <a href="#" data-btn class="disabled">Enviar</a>
                         </div>
-                        <em data-error></em>
                     </article>
                 </section>
             </section>
@@ -208,48 +212,42 @@
             <footer class="footer">
                 <section>
                     <aside class="footer-brand">
-                        <img src="" alt="">
+                        <img src="" alt="Logo">
                         <span>
                             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione eos a maiores provident ipsam dicta hic.    
                         </span>
                     </aside>
-                    <ul class="footer-links">
-                        <li>
-                            <article>
-                                <em>Links</em>
-                                <ul>
-                                    <li>
-                                        <a href="#inico">Inicio</a>
-                                    </li>
-                                    <li>
-                                        <a href="#servicios">Servicios</a>
-                                    </li>
-                                    <li>
-                                        <a href="#sobre-nosotros"></a>Sobre Nosotros</li>
-                                    <li>
-                                        <a href="contacto">Contacto</a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </li>
-                        <li>
-                            <article>
-                                <em>Socials</em>
-                                <ul>
-                                    <li>
-                                        <a href="#">
-                                            <img src="./images/instagram.png" alt="ig">
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <img src="./images/github.png" alt="ig">
-                                        </a>
-                                    </li>
-                                </ul>
-                            </article>
-                        </li>
-                    </ul>
+                    <div class="footer-links">
+                        <em>Links</em>
+                        <ul>
+                            <li>
+                                <a href="#inico">Inicio</a>
+                            </li>
+                            <li>
+                                <a href="#servicios">Servicios</a>
+                            </li>
+                            <li>
+                                <a href="#sobre-nosotros"></a>Sobre Nosotros</li>
+                            <li>
+                                <a href="contacto">Contacto</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-links">
+                        <em>Socials</em>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/instagram.png" alt="ig">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <img src="./images/github.png" alt="ig">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </section>
                 <div class="copyright">
                     <span>© ResolveDev</span>

@@ -340,7 +340,7 @@ body > header {
 #sobre-nosotros .personas article {
     display: flex;
     flex-direction: column;
-    text-align: start;
+    text-align: center;
     gap: 0.5em;
 }
 
@@ -351,6 +351,7 @@ body > header {
 #sobre-nosotros > footer > ul > li > a {
     color: grey;
     width: 100%;
+    text-align: center;
 }
 
 /*----------CONTACTO----------*/
@@ -360,12 +361,6 @@ body > header {
     align-items: start;
     justify-content: space-between;
     flex-direction: column;
-}
-
-#contacto > header {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5em;
 }
 
 #contacto > section {
@@ -379,11 +374,25 @@ body > header {
 #contacto > section aside {
     width: 35%;
 }
+#contacto > section > aside > header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#contacto > section > aside > header > h3 {
+    font-weight: bolder;
+    font-size: 1.75em;
+}
+#contacto > section > aside > header > span {
+    font-size: .9em;
+}
 
 #contacto > section aside > ul {
     display: flex;
     flex-direction: column;
     gap: 1em;
+    margin-top: 2em;
 }
 
 #contacto > section aside > ul > li {
@@ -392,30 +401,41 @@ body > header {
 }
 
 #contacto > section article {
-    /* flex: 1; */
-    /* margin-left: 4em; */
-    padding: 4em;
-    background-color: #eee;
-    border-radius: 1em;
+    flex: 1;
+    display: flex;
+    justify-content: end;
 }
 
-#contacto > section article > div {
+#contacto .form {
+    padding: 3em;
+    background-color: #eee;
+    border-radius: 1em;
+    width: 70%;
+}
+
+#contacto .form > div{
     display: flex;
     align-items: start;
     justify-content: center;
     flex-direction: column;
-    margin-top: 1em;
+    text-align: center;
 }
 
-#contacto > section article > div > div {
+#contacto .form > div > div {
+    width: 100%;
     display: flex;
     align-items: center;
-    gap: 1em;
-    padding: 1em 0em;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5em 0;
 }
 
-#contacto > section article > div > input,
-#contacto > section article > div > textarea {
+#contacto .form .mail > em {
+    color: grey;
+}
+
+#contacto .form > div > input,
+#contacto .form > div > textarea {
     width: 100%;
     padding: 1em;
     margin: .5em 0;
@@ -423,23 +443,31 @@ body > header {
     border: 1px solid blue;
 }
 
-#contacto > section article > div > textarea {
+#contacto .form > div > textarea {
     resize: none;
 }
 
-#contacto > section article > div > input::placeholder,
-#contacto > section article > div > textarea::placeholder {
+#contacto .form > div >input::placeholder,
+#contacto .form > div > textarea::placeholder {
     color: blue;
 }
 
-#contacto > section article > div > a {
+#contacto .form > div > span {
+    font-size: .9em;
+    font-weight: 600;
+    color: blue;
+    width: 100%;
+}
+
+#contacto .form > div > a {
     background-color: blue;
     padding: .5em 1em;
     border-radius: 1em;
     font-weight: 600;
-    width: 20em;
+    width: 100%;
     text-align: center;
     color: white;
+    margin-top: .5em;
 }
 
 /*----------FOOTER----------*/
@@ -453,30 +481,43 @@ body > header {
 }
 
 .footer > section {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
     width: 100%;
     padding: 2em;
 }
 
-.footer > section .footer-brand {
-    width: 15em;
+.footer .footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-brand > img {}
+
+.footer .footer-brand > span {
+    font-size: .75em;
+    width: 20em;
 }
 
 .footer .footer-links {
     display: flex;
-    align-items: start;
+    align-items: center;
     justify-content: space-between;
-    gap: 2em;
+    flex-direction: column;
+    gap: 1em;
 }
 
-.footer .footer-links li ul {
+.footer .footer-links > ul {
     margin-top: 0.5em;
 }
 
-.footer .footer-links li:last-child ul {
+.footer .footer-links > em {
+    font-weight: bolder;
+}
+
+.footer .footer-links:last-child ul {
     display: flex;
     flex-direction: row;
     gap: 0.5em;
