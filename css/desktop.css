@@ -1,0 +1,46 @@
+
+/*----------NAVBAR----------*/
+
+.navbar .navbar-responsive {
+    display: none;
+}
+
+/*----------SERVICIOS----------*/
+
+#servicios > ul {
+    padding: 1em;
+}
+
+#servicios .item > header {
+    font-size: 1.125em;
+}
+
+/*----------CONTACTO----------*/
+
+#contacto > section aside {
+    width: 35%;
+}
+
+#contacto > section article {
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+
+#contacto .form {
+    width: 70%;
+}
+
+/*---------FOOTER---------*/
+
+.footer > section {
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.footer .footer-brand {
+    align-items: center;
+}
+
+.footer .footer-links {
+    align-items: center;
+}

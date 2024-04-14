@@ -1,0 +1,152 @@
+
+body {
+    font-size: 3.5vw;
+}
+
+
+/*----------NAVBAR----------*/
+
+.navbar .navbar-responsive .icon {
+    font-size: 1.5em;
+}
+
+.navbar.top .navbar-responsive .icon {
+    background-color: white;
+}
+
+.navbar > ul,
+.navbar .navbar-buttons {
+    display: none;
+}
+
+.navbar .navbar-responsive > article{
+    display: none;
+}
+
+.navbar .navbar-responsive input {
+    display: none;
+}
+
+.navbar .navbar-responsive input:checked + article {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar .navbar-responsive > article {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+.navbar .navbar-responsive > article ul {
+    background-color: white;
+    z-index: 1;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    width: 20em;
+}
+
+.navbar .navbar-responsive > article ul li a {
+    color: black;
+}
+
+.navbar .navbar-responsive .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: black;
+    opacity: .4;
+
+    height: 100vh;
+}
+
+.navbar .navbar-responsive .menu-close,
+.navbar .navbar-responsive .menu-close label {
+    width: 100%;
+    text-align: end;
+}
+
+/*----------SERVICIOS----------*/
+
+#servicios > ul {
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 2em;
+    
+    scroll-snap-type: x mandatory;
+}
+
+#servicios .item {
+    font-size: 1.25em;
+    scroll-snap-align: center;
+}
+
+#servicios .item > header {
+    font-size: 1.5em;
+}
+
+#servicios .item > article{
+    font-size: 1.5em;
+}
+
+#servicios .item > footer {
+    font-size: 1em;
+}
+
+/*----------SOBRE NOSOTROS---------*/
+
+#sobre-nosotros > article {
+    flex-direction: column;
+}
+
+#sobre-nosotros .personas {
+    flex-direction: column;
+    gap: 2em;
+}
+
+/*----------CONTACTO----------*/
+
+#contacto > section {
+    flex-direction: column;
+    gap: 2em;
+}
+
+#contacto > section aside {
+    width: 100%;
+}
+
+#contacto > section article {
+    width: 100%;
+}
+
+#contacto .form {
+    width: 100%;
+}
+
+/*----------FOOTER----------*/
+
+.footer > section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2em;
+    width: 100%;
+    padding: 2em;
+}
+
+.footer .footer-brand {
+    align-items: start;
+}
+
+.footer .footer-links {
+    align-items: start;
+}

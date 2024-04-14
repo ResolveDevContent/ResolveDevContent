@@ -1,0 +1,25 @@
+
+
+.icon {
+    width: 1.5em;
+    height: 1.5em;
+    display: block;
+    background-color: black;
+    -webkit-mask-size: contain;
+    -webkit-mask-repeat: no-repeat;
+}
+
+.icon.menu {
+    mask-image: url('../icons/menu.svg');
+    -webkit-mask-image: url('../icons/menu.svg');
+}
+
+.icon.instagram {
+    mask-image: url('../icons/instagram.svg');
+    -webkit-mask-image: url('../icons/instagram.svg');
+}
+
+.icon.mail {
+    mask-image: url('../icons/mail.svg');
+    -webkit-mask-image: url('../icons/mail.svg');
+}

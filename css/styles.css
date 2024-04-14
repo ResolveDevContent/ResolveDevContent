@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    position: relative;
+    background-color: whitesmoke;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    position: relative;
+    z-index: 16;
+}
+
+.disabled {
+    pointer-events: none;
+    user-select: none;
+    opacity: .2;
+}
+
+#servicios,
+#sobre-nosotros,
+#contacto {
+    margin: 2em;
+}
+
+/*----------NAVBAR STYLES----------*/
+
+body > header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 32;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em;
+    background-color: white;
+    transition: 1s all;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 32;
+}
+
+.navbar.top {
+    background-color: transparent;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5em;
+}
+
+.navbar ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li a {
+    color: black;
+    transition: all 0.5s;
+    text-align: center;
+}
+
+.navbar.top ul li a{
+    color: white;
+}
+
+.navbar ul li a::after{
+    content: "";
+    width: 0.5em;
+    height: 0.125em;
+    background-color: transparent;
+    transition: all 0.5s;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar ul li a:hover::after{
+    content: "";
+    width: 1.5em;
+    height: 0.125em;
+    background-color: blue;
+    display: block;
+    margin: 0 auto;
+}
+
+.navbar .navbar-logo {
+    width: 13em;
+}
+
+.navbar .navbar-logo a{
+    display: flex;
+}
+
+.navbar .navbar-buttons a{
+    padding: 0.5em;
+    background-color: blue;
+    color: white;
+    border-radius: 1em;
+    transition: all 0.5s;
+
+    width: 7em;
+    display: block;
+    text-align: center;
+}
+
+.navbar .navbar-buttons a:hover {
+    background-color: rgb(60, 60, 255);
+}
+
+/*----------HOME----------*/
+
+#inicio{
+    position: relative;
+}
+
+#inicio figure {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+#inicio figcaption {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    backdrop-filter: brightness(.5);
+}
+
+#inicio figcaption article {
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+#inicio .home-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    color: white;
+}
+
+#inicio .home-text span {
+    font-size: 4em;
+    font-weight: bold;
+}
+
+#inicio .home-text em {
+    font-size: 2em;
+}
+
+#inicio .home-text p {
+    font-size: 1.125em;
+}
+
+#inicio figcaption article footer a{
+    padding: 0.5em;
+    text-transform: uppercase;
+    color: white;
+    background-color: blue;
+    border-radius: 1em;
+}
+
+/*----------SERVICIOS----------*/
+
+#servicios,
+#sobre-nosotros {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#servicios > header {
+    text-align: center;
+    margin: 2em 0;
+}
+
+#servicios > header h3 {
+    font-weight: bolder;
+    font-size: 2em;
+}
+
+#servicios > ul {
+    width: 100%;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin-bottom: 2em;
+}
+
+#servicios .item {
+    background-color: white;
+    padding: 2em;
+    border-radius: 1em;
+    min-height: 16em;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#servicios .item > header {
+    position: static;
+    margin-bottom: 1em;
+    font-weight: bolder;
+}
+
+#servicios .item > article{
+    flex-grow: 1;
+}
+
+#servicios .item > article > ul {
+    list-style: disc;
+    padding-left: .5em;
+}
+
+#servicios .item > article > ul > li {
+    line-height: 1.325em;
+}
+
+#servicios .item > footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+#servicios .item > footer > a {
+    background-color: blue;
+    padding: .5em 1em;
+    border-radius: 1em;
+    font-weight: 600;
+    color: white;
+}
+
+/*----------SOBRE NOSOTROS----------*/
+
+#sobre-nosotros{
+    gap: 4em;
+}
+
+#sobre-nosotros > article {
+    display: flex;
+    align-items: center;
+}
+
+#sobre-nosotros > article > aside {
+    width: 50%;
+    padding: 1em;
+}
+
+#sobre-nosotros > article > div {
+    flex: 1;
+    padding: 1em;
+}
+
+#sobre-nosotros > article > div > header {
+    padding: 2em 0; 
+}
+
+#sobre-nosotros > article > div > header span {
+    text-transform: uppercase;
+    font-size: 0.75em;
+}
+
+#sobre-nosotros > article > div > header h3 {
+    font-weight: bolder;
+    font-size: 1.75em;
+    margin-top: 0.25em;
+}
+
+#sobre-nosotros > footer{
+    width: 100%;
+}
+
+#sobre-nosotros .personas {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#sobre-nosotros .personas > li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+#sobre-nosotros .personas > li > header {
+    width: 100%;
+}
+
+#sobre-nosotros .personas > li > header > img {
+    display: block;
+    height: 15em;
+    background-color: gray;
+}
+
+#sobre-nosotros .personas article {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+}
+
+#sobre-nosotros .personas article span {
+    max-width: 15em;
+}
+
+#sobre-nosotros > footer > ul > li > a {
+    color: grey;
+    width: 100%;
+    text-align: center;
+}
+
+/*----------CONTACTO----------*/
+
+#contacto {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+#contacto > section {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    margin-block: 2em;
+}
+
+#contacto > section > aside > header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#contacto > section > aside > header > h3 {
+    font-weight: bolder;
+    font-size: 1.75em;
+}
+#contacto > section > aside > header > span {
+    font-size: .9em;
+}
+
+#contacto > section aside > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-top: 2em;
+}
+
+#contacto > section aside > ul > li {
+    padding: 1em .5em;
+    background-color: rgba(0, 183, 255, 0.5);
+
+}
+
+#contacto > section aside > ul > li a {
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+}
+
+#contacto .form {
+    padding: 3em;
+    background-color: white;
+    border-radius: 1em;
+}
+
+#contacto .form > div{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#contacto .form > div > div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: .5em 0;
+}
+
+#contacto .form .mail > em {
+    color: grey;
+}
+
+#contacto .form > div > input,
+#contacto .form > div > textarea {
+    width: 100%;
+    padding: 1em;
+    margin: .5em 0;
+    border-radius: 1em;
+    border: 1px solid blue;
+}
+
+#contacto .form > div > textarea {
+    resize: none;
+}
+
+#contacto .form > div >input::placeholder,
+#contacto .form > div > textarea::placeholder {
+    color: blue;
+}
+
+#contacto .form > div > span {
+    font-size: .9em;
+    font-weight: 600;
+    color: blue;
+    width: 100%;
+}
+
+#contacto .form > div > a {
+    background-color: blue;
+    padding: .5em 1em;
+    border-radius: 1em;
+    font-weight: 600;
+    width: 100%;
+    text-align: center;
+    color: white;
+    margin-top: .5em;
+}
+
+/*----------FOOTER----------*/
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+
+.footer > section {
+    display: grid;
+    gap: 2em;
+    width: 100%;
+    padding: 2em;
+}
+
+.footer .footer-brand {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer .footer-brand > span {
+    font-size: .75em;
+    width: 20em;
+}
+
+.footer .footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer .footer-links > ul {
+    margin-top: 0.5em;
+}
+
+.footer .footer-links > em {
+    font-weight: bolder;
+}
+
+.footer .footer-links:last-child ul {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+
+.footer .footer-links img {
+    width: 2em;
+}
+
+.footer .copyright {
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: black;
+}
+
+.footer .copyright span {
+    width: 100%;
+    color: white;
+}
+
+
+
