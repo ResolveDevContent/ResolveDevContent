@@ -572,32 +572,36 @@ body > header {
     width: 20em;
 }
 
-.footer .footer-links {
+.footer .footer-links,
+.footer .footer-socials {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
     gap: 1em;
 }
 
-.footer .footer-links > ul {
+.footer .footer-links > ul,
+.footer .footer-socials > ul{
     margin-top: 0.5em;
 }
 
-.footer .footer-links > em {
+.footer .footer-links > em,
+.footer .footer-socials > em{
     font-weight: bolder;
 }
 
-.footer .footer-links:last-child ul {
+.footer .footer-socials ul{
     display: flex;
     flex-direction: row;
     gap: 0.5em;
 }
 
-.footer .footer-links a {
+.footer .footer-links a,
+.footer .footer-socials a{
     display: flex;
 }
 
-.footer .footer-links img {
+.footer .footer-socials img {
     width: 2em;
 }
 
