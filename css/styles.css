@@ -510,7 +510,7 @@ body > header {
 }
 
 #contacto .form .container-mail > div > label.active {
-    background-color: var(--primary);
+    background-color: black;
 }
 
 #contacto .form .container-mail > div > label > input {

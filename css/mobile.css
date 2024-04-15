@@ -23,9 +23,20 @@ body {
     background-color: white;
 }
 
+.navbar .navbar-responsive article.popup .icon {
+    background-color: var(--primary);
+    font-size: 1.25em;
+    margin-right: .625em;
+}
+
 .navbar > ul,
 .navbar .navbar-buttons {
     display: none;
+}
+
+.navbar ul li {
+    width: 100%;
+    padding-left: 1.5em;
 }
 
 .navbar .navbar-responsive > article{
@@ -52,7 +63,6 @@ body {
 
     width: 100%;
     height: 100%;
-
 }
 
 .navbar .navbar-responsive > article ul {
@@ -62,7 +72,7 @@ body {
     display: flex;
     flex-direction: column;
     border-radius: 1em;
-    width: 20em;
+    width: 80%;
 }
 
 .navbar .navbar-responsive input:checked + article ul {
@@ -74,6 +84,9 @@ body {
     color: black;
     text-transform: uppercase;
     font-size: 1.125em;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
 .navbar .navbar-responsive .background {
@@ -90,6 +103,12 @@ body {
 
 .navbar .navbar-responsive .menu-close {
     width: 100%;
+    padding: 0;
+}
+
+.navbar .navbar-responsive .menu-close em {
+    font-size: 1.75em;
+    font-weight: bolder;
 }
 
 .navbar .navbar-responsive .menu-close label{
@@ -100,6 +119,12 @@ body {
 
 .navbar .navbar-responsive .menu-close .icon.close {
     background-color: black;
+    margin: 0;
+}
+
+.navbar .navbar-responsive .popup ul li a span{
+    font-weight: bold;
+    font-size: 1.125em;
 }
 
 /*----------HOME----------*/
@@ -278,6 +303,11 @@ body {
 #contacto .form > div > a {
     margin-top: 1em;
     font-size: 1.25em;
+}
+
+#contacto .form .container-mail > div > label img {
+    width: 2em;
+    height: 2em;
 }
 
 /*----------FOOTER----------*/

@@ -45,7 +45,6 @@ const debounce = callback => {
 //-------------------------------------
 
 const createMail = event => {
-    console.log(event)
     info[event.target.name] = event.target.value;
 
     const invalids = form.querySelectorAll('input:required:invalid,textarea:required:invalid');
@@ -116,7 +115,7 @@ Array.from(mails).forEach(elm => {
             element.classList.toggle('active');
         });
         
-        createMail();
+        createMail(event);
     });
 });
 
