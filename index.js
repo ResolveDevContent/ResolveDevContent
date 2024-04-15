@@ -27,13 +27,9 @@ const btnEnviar   = document.querySelector('[data-btn]'),
           nombre : '',
           asunto : '',
           message: '',
-          mail   : ''  
+          mail   : document.querySelector('input[name="mail"]:checked').value 
         };
-
-//-----------------------------------------------------------------------------
-
-info.mail = document.querySelector('input[name="mail"]:checked').value;
-
+        
 //-----------------------------------------------------------------------------
 
 const debounce = callback => {
