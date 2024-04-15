@@ -34,10 +34,6 @@
 
 /*----------SERVICIOS----------*/
 
-#servicios > ul {
-    padding: 1em;
-}
-
 #servicios > ul > li:nth-child(2) {
     transform: scale(1.125);
 }

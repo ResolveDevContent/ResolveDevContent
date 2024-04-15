@@ -67,7 +67,8 @@ const createMail = event => {
     btnEnviar.classList.remove('disabled');
 }
 
-//-----------------------------------------------------------------------------
+//-------------------------------------
+
 function isScrolledIntoView(elem) {
     var rect = elem.getBoundingClientRect();
     var elemTop = rect.top;
@@ -78,6 +79,8 @@ function isScrolledIntoView(elem) {
     return isVisible;
 }
 
+//-----------------------------------------------------------------------------
+
 let flag = true;
 window.addEventListener('scroll', () => {
     if(window.scrollY == 0 && !flag || window.scrollY > 0 && flag) {
@@ -85,11 +88,13 @@ window.addEventListener('scroll', () => {
         flag = !flag;
     }
 
-    document.querySelectorAll('.start-animation').forEach(function(container) {
-        if (isScrolledIntoView(container)) {
-            container.classList.add('inView');
-        } 
-    })
+    document
+        .querySelectorAll('.start-animation')
+        .forEach(function(container) {
+            if (isScrolledIntoView(container)) {
+                container.classList.add('inView');
+            } 
+        });
 }, true);
 
 

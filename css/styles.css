@@ -384,8 +384,9 @@ body > header {
 
 #sobre-nosotros .personas li footer {
     width: 100%;
-    text-align: center;
     margin-top: 1em;
+    display: flex;
+    justify-content: center;
 }
 
 #sobre-nosotros .personas li footer a {
@@ -393,6 +394,15 @@ body > header {
     border-radius: .5em;
     padding: .5em 1.5em;
     font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-nosotros .personas li footer a > img {
+    width: 1em;
+    height: 1em;
+    margin-right: .5em;
 }
 
 #sobre-nosotros > footer > ul > li > a {
@@ -474,15 +484,15 @@ body > header {
     margin: .5em 0;
 }
 
-#contacto .form .mail > em {
+#contacto .form .container-mail > em {
     color: grey;
 }
 
-#contacto .form .mail > div {
+#contacto .form .container-mail > div {
     margin-block: .5em;
 }
 
-#contacto .form .mail > div > label {
+#contacto .form .container-mail > div > label {
     background-color: rgb(236, 236, 236);
     border-radius: .5em;
     padding: .25em 1em;
@@ -491,11 +501,11 @@ body > header {
     cursor: pointer;
 }
 
-#contacto .form .mail > div > label.active {
+#contacto .form .container-mail > div > label.active {
     background-color: var(--primary);
 }
 
-#contacto .form .mail > div > label > input {
+#contacto .form .container-mail > div > label > input {
     display: none;
 }
 
