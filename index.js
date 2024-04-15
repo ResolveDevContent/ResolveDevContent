@@ -29,7 +29,7 @@ const btnEnviar   = document.querySelector('[data-btn]'),
           message: '',
           mail   : document.querySelector('input[name="mail"]:checked').value 
         };
-        
+
 //-----------------------------------------------------------------------------
 
 const debounce = callback => {
@@ -86,7 +86,16 @@ Array.from(mailsData).forEach(elm => {
 //-------------------------------------
 
 Array.from(mails).forEach(elm => {
-    elm.addEventListener('change', createMail);
+    elm.addEventListener('change', event => {
+        event.preventDefault();
+
+        Array.from(mails).forEach(row => {
+            const element = row.closest('label');
+            element.classList.toggle('active');
+        });
+        
+        createMail();
+    });
 });
 
 //-----------------------------------------------------------------------------

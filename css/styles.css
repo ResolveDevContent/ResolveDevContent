@@ -388,6 +388,19 @@ body > header {
     max-width: 15em;
 }
 
+#sobre-nosotros .personas li footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+}
+
+#sobre-nosotros .personas li footer a {
+    background-color: gray;
+    border-radius: .5em;
+    padding: .5em 1.5em;
+    font-weight: bolder;
+}
+
 #sobre-nosotros > footer > ul > li > a {
     color: grey;
     width: 100%;
@@ -469,6 +482,26 @@ body > header {
 
 #contacto .form .mail > em {
     color: grey;
+}
+
+#contacto .form .mail > div {
+    margin-block: .5em;
+}
+
+#contacto .form .mail > div > label {
+    background-color: rgb(236, 236, 236);
+    border-radius: .5em;
+    padding: .25em 1em;
+    margin-inline: .5em;
+    font-weight: bolder;
+}
+
+#contacto .form .mail > div > label.active {
+    background-color: var(--primary);
+}
+
+#contacto .form .mail > div > label > input {
+    display: none;
 }
 
 #contacto .form > div > input,
