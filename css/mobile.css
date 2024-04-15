@@ -84,6 +84,9 @@ body {
     justify-content: end;
 }
 
+.navbar .navbar-responsive .menu-close .icon.close {
+    background-color: black;
+}
 
 /*----------SERVICIOS----------*/
 
