@@ -490,15 +490,23 @@ body > header {
 
 #contacto .form .container-mail > div {
     margin-block: .5em;
+    display: flex;
 }
 
 #contacto .form .container-mail > div > label {
     background-color: rgb(236, 236, 236);
     border-radius: .5em;
-    padding: .25em 1em;
+    padding: 0.5em;
     margin-inline: .5em;
     font-weight: bolder;
     cursor: pointer;
+    display: flex;
+
+}
+
+#contacto .form .container-mail > div > label img {
+    width: 30px;
+    height: 30px;
 }
 
 #contacto .form .container-mail > div > label.active {
@@ -545,6 +553,7 @@ body > header {
     color: white;
     margin-top: .5em;
 }
+
 
 /*----------FOOTER----------*/
 
