@@ -11,6 +11,10 @@ body {
 
 /*----------NAVBAR----------*/
 
+.navbar .navbar-logo {
+    width: 15em;
+}
+
 .navbar .navbar-responsive .icon {
     font-size: 1.5em;
 }
@@ -97,6 +101,7 @@ body {
 
 #inicio figcaption article {
     max-width: 100%;
+    margin-inline: 1em;
 }
 
 #inicio .home-text span {
@@ -126,20 +131,33 @@ body {
 }
 
 #servicios .item {
-    font-size: 1.25em;
+    width: 100%;
     scroll-snap-align: center;
 }
 
-#servicios .item > header {
-    font-size: 1.5em;
+#servicios .item > header > strong {
+    font-size: 1.75em;
+}
+
+#servicios .item > header > span {
+    font-size: 1.25em;
 }
 
 #servicios .item > article{
     font-size: 1.5em;
+    margin-top: .5em;
 }
 
-#servicios .item > footer {
-    font-size: 1em;
+#servicios .item > footer > a {
+    font-size: 1.325em;
+}
+
+#servicios footer {
+    text-align: center;
+}
+
+#servicios footer > a {
+    font-size: 1.325em;
 }
 
 /*----------SOBRE NOSOTROS---------*/
@@ -155,6 +173,10 @@ body {
 
 #sobre-nosotros > article > aside {
     width: 100%;
+}
+
+#sobre-nosotros > article > div > header {
+    margin-bottom: 2em; 
 }
 
 #sobre-nosotros > article > div > header span {
@@ -220,6 +242,33 @@ body {
 
 #contacto .form {
     width: 100%;
+    padding: 2em;
+}
+
+#contacto > section > aside > header > span {
+    font-size: 1.25em;
+}
+
+#contacto > section aside > ul > li a {
+    font-size: 1.325em;
+}
+
+#contacto .form > div > input, 
+#contacto .form > div > textarea {
+    font-size: 1.125em;
+}
+
+#contacto .mail {
+    font-size: 1.25em;
+}
+
+#contacto .form > div > span {
+    font-size: 1.125em;
+}
+
+#contacto .form > div > a {
+    margin-top: 1em;
+    font-size: 1.25em;
 }
 
 /*----------FOOTER----------*/
@@ -233,12 +282,51 @@ body {
 }
 
 .footer .footer-brand {
-    align-items: start;
+    align-items: center;
 }
 
-.footer .footer-links {
-    align-items: start;
+.footer .footer-links,
+.footer .footer-socials {
+    align-items: center;
 }
+
+.footer .footer-brand > span {
+    font-size: 1.125em;
+}
+
+.footer .footer-links > em, 
+.footer .footer-socials > em {
+    font-size: 1.75em;
+}
+
+.footer .footer-links > ul > li {
+    margin-block: .25em;
+}
+
+.footer .footer-links > ul > li > a {
+    font-size: 1.5em;
+}
+
+.footer .footer-socials > ul > li {
+    margin-inline: .5em;
+}
+
+.footer .footer-socials > ul > li img {
+    width: 3.5em;
+}
+
+.footer .copyright span {
+    font-size: 1.325em;
+}
+
+
+/*--------------------*/
+
+.start-animation.inView svg {
+    width: 100%
+}
+
+/*--------------------*/
 
 @keyframes popup {
     0% {

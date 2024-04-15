@@ -6,6 +6,11 @@
 
 /*----------NAVBAR----------*/
 
+.navbar .navbar-logo {
+    width: 13em;
+}
+
+
 .navbar .navbar-responsive {
     display: none;
 }
@@ -64,6 +69,10 @@
     max-width: 15em;
 }
 
+#sobre-nosotros > article > div > header {
+    margin-bottom: 2.5em; 
+}
+
 /*----------CONTACTO----------*/
 
 #contacto > section aside {
@@ -78,6 +87,15 @@
 
 #contacto .form {
     width: 70%;
+    padding: 3em;
+}
+
+#contacto > section > aside > header > span {
+    font-size: .9em;
+}
+
+#contacto .form > div > span {
+    font-size: .9em;
 }
 
 /*---------FOOTER---------*/
@@ -93,4 +111,16 @@
 .footer .footer-links,
 .footer .footer-socials {
     align-items: center;
+}
+
+.footer .footer-brand > span {
+    font-size: .75em;
+    width: 20em;
+}
+
+/*--------------------*/
+
+.start-animation.inView svg {
+    width: 80%;
+    margin-left: auto;
 }
