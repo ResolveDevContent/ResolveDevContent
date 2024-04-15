@@ -307,7 +307,7 @@ body > header {
 /*----------SOBRE NOSOTROS----------*/
 
 #sobre-nosotros{
-    gap: 4em;
+    gap: 1em;
 }
 
 #sobre-nosotros > article {
@@ -338,6 +338,17 @@ body > header {
 
 #sobre-nosotros > footer{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5em;
+}
+
+#sobre-nosotros > footer > header {
+    text-align: center;
+}
+
+#sobre-nosotros > footer > header > strong {
+    font-size: 1.75em;
 }
 
 #sobre-nosotros .personas {
