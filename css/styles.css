@@ -634,21 +634,10 @@ body > header {
     display: none;
 }
 
-.start-animation > div {
-    display: none;
-}
-
 .start-animation.inView svg{
     display: flex;
     transition: all 0.5s;
     animation: translate 1s ease-in-out ;
-}
-
-.start-animation.inView > div{
-    display: flex;
-    flex-direction: column;
-    transition: all 0.5s;
-    animation: translate2 1s ease-in-out ;
 }
 
 .start-animation.inView .animation1 {
@@ -692,17 +681,6 @@ body > header {
 @keyframes translate {
     0% {
         transform: translateX(-30em);
-        opacity: 0;
-    }
-    100% {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes translate2 {
-    0% {
-        transform: translateX(30em);
         opacity: 0;
     }
     100% {

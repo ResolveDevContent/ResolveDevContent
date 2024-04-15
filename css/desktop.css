@@ -119,3 +119,25 @@
     width: 80%;
     margin-left: auto;
 }
+
+.start-animation > div {
+    display: none;
+} 
+
+.start-animation.inView > div{
+    display: flex;
+    transition: all 0.5s;
+    animation: translate2 1s ease-in-out;
+    flex-direction: column;
+}
+
+@keyframes translate2 {
+    0% {
+        transform: translateX(30em);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
