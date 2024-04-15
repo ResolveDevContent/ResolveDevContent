@@ -5,6 +5,7 @@
     scroll-behavior: smooth;
 }
 
+
 body {
     font-family: "Open Sans", sans-serif;
     position: relative;
@@ -44,6 +45,7 @@ section {
 #contacto {
     margin: 2em;
 }
+
 
 /*----------NAVBAR STYLES----------*/
 
@@ -141,6 +143,7 @@ body > header {
 }
 
 /*----------HOME----------*/
+
 
 #inicio{
     position: relative;
@@ -526,6 +529,3 @@ body > header {
     width: 100%;
     color: white;
 }
-
-
-

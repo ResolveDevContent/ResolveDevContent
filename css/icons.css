@@ -23,3 +23,8 @@
     mask-image: url('../icons/mail.svg');
     -webkit-mask-image: url('../icons/mail.svg');
 }
+
+.icon.close {
+    mask-image: url('../icons/close.svg');
+    -webkit-mask-image: url('../icons/close.svg');
+}
