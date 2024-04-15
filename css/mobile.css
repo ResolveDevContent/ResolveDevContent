@@ -3,6 +3,11 @@ body {
     font-size: 3.5vw;
 }
 
+#sobre-nosotros > article > div > header h3,
+#servicios > header h3,
+#contacto > section > aside > header > h3 {
+    font-size: 2.5em;
+}
 
 /*----------NAVBAR----------*/
 
@@ -88,6 +93,28 @@ body {
     background-color: black;
 }
 
+/*----------HOME----------*/
+
+#inicio figcaption article {
+    max-width: 100%;
+}
+
+#inicio .home-text span {
+    font-size: 3em;
+}
+
+#inicio .home-text em {
+    font-size: 3em;
+}
+
+#inicio .home-text p {
+    font-size: 1.25em;
+}
+
+#inicio figcaption article footer a {
+    font-size: 1.25em;
+}
+
 /*----------SERVICIOS----------*/
 
 #servicios > ul {
@@ -124,6 +151,56 @@ body {
 #sobre-nosotros .personas {
     flex-direction: column;
     gap: 2em;
+}
+
+#sobre-nosotros > article > aside {
+    width: 100%;
+}
+
+#sobre-nosotros > article > div > header span {
+    font-size: 1.25em;
+}
+
+#sobre-nosotros > article > div > p {
+    font-size: 1.125em;
+}
+
+#sobre-nosotros .personas > li {
+    width: 100%;
+}
+
+#sobre-nosotros .personas > li:last-child {
+    margin-top: 2em;
+}
+
+#sobre-nosotros .personas > li > header {
+    display: flex;
+    justify-content: center;
+}
+
+#sobre-nosotros .personas > li > header > img {
+    width: 70%;
+    height: 18em;
+}
+
+#sobre-nosotros .personas article {
+    width: 100%;
+}
+
+#sobre-nosotros .personas article strong{
+    font-size: 1.625em;
+}
+
+#sobre-nosotros .personas article em{
+    font-size: 1.25em;
+}
+
+#sobre-nosotros .personas article span{
+    font-size: 1.125em;
+}
+
+#sobre-nosotros .personas li footer a {
+    font-size: 1.25em;
 }
 
 /*----------CONTACTO----------*/

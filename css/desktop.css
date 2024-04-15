@@ -1,8 +1,31 @@
+#sobre-nosotros > article > div > header h3,
+#servicios > header h3,
+#contacto > section > aside > header > h3 {
+    font-size: 1.75em;
+}
 
 /*----------NAVBAR----------*/
 
 .navbar .navbar-responsive {
     display: none;
+}
+
+/*----------HOME----------*/
+
+#inicio figcaption article {
+    max-width: 50%;
+}
+
+#inicio .home-text span {
+    font-size: 4em;
+}
+
+#inicio .home-text em {
+    font-size: 2em;
+}
+
+#inicio .home-text p {
+    font-size: 1.125em;
 }
 
 /*----------SERVICIOS----------*/
@@ -21,6 +44,24 @@
 
 #servicios .item > header {
     font-size: 1.125em;
+}
+
+/*----------SOBRE NOSOTROS----------*/
+
+#sobre-nosotros > article > aside {
+    width: 50%;
+}
+
+#sobre-nosotros > article > div > header span {
+    font-size: 0.75em;
+}
+
+#sobre-nosotros .personas > li > header > img {
+    height: 15em;
+}
+
+#sobre-nosotros .personas article span {
+    max-width: 15em;
 }
 
 /*----------CONTACTO----------*/
