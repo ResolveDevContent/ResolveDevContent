@@ -17,11 +17,11 @@
 /*----------HOME----------*/
 
 #inicio figcaption article {
-    max-width: 50%;
+    max-width: 80%;
 }
 
 #inicio .home-text span {
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 #inicio .home-text em {

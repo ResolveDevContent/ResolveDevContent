@@ -189,7 +189,6 @@ body > header {
 }
 
 #inicio figcaption article {
-    max-width: 50%;
     display: flex;
     flex-direction: column;
     gap: 2.5em;
