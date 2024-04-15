@@ -334,6 +334,7 @@ body > header {
     display: block;
     height: 15em;
     background-color: gray;
+    border-radius: 50%;
 }
 
 #sobre-nosotros .personas article {
