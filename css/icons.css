@@ -28,3 +28,8 @@
     mask-image: url('../icons/close.svg');
     -webkit-mask-image: url('../icons/close.svg');
 }
+
+.icon.check {
+    mask-image: url('../icons/check.svg');
+    -webkit-mask-image: url('../icons/check.svg');
+}

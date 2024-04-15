@@ -11,6 +11,10 @@
     padding: 1em;
 }
 
+#servicios > ul > li:nth-child(2) {
+    transform: scale(1.125);
+}
+
 #servicios .item {
     min-height: 25em;
 }

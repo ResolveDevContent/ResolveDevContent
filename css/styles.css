@@ -259,9 +259,16 @@ body > header {
 }
 
 #servicios .item > header {
-    position: static;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
     margin-bottom: 1em;
-    font-weight: bolder;
+    max-width: 12em;
+}
+
+#servicios .item > header span {
+    font-size: 0.7em;
 }
 
 #servicios .item > article{
@@ -269,12 +276,20 @@ body > header {
 }
 
 #servicios .item > article > ul {
-    list-style: disc;
-    padding-left: .5em;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
 }
 
 #servicios .item > article > ul > li {
-    line-height: 1.325em;
+    display: flex;
+    align-items: center;
+
+}
+
+#servicios .item > article > ul > li .check {
+    background-color: #78e08f;
 }
 
 #servicios .item > footer {
@@ -288,6 +303,11 @@ body > header {
     border-radius: 1em;
     font-weight: 600;
     color: white;
+    transition: all 0.5s;
+}
+
+#servicios .item > footer > a:hover {
+    background-color: var(--secondary);
 }
 
 /*----------SOBRE NOSOTROS----------*/
