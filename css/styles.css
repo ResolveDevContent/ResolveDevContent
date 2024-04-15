@@ -60,7 +60,7 @@ section {
 #servicios,
 #sobre-nosotros,
 #contacto {
-    margin: 2em;
+    margin: 4em 2em;
 }
 
 
@@ -599,6 +599,7 @@ body > header {
 .footer .footer-links a,
 .footer .footer-socials a{
     display: flex;
+    flex-direction: column;
 }
 
 .footer .footer-socials img {
