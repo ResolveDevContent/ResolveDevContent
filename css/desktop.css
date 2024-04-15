@@ -11,6 +11,10 @@
     padding: 1em;
 }
 
+#servicios .item {
+    min-height: 25em;
+}
+
 #servicios .item > header {
     font-size: 1.125em;
 }
