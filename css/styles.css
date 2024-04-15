@@ -329,6 +329,8 @@ body > header {
 #sobre-nosotros > article > aside {
     width: 50%;
     padding: 1em;
+
+    aspect-ratio: 1/1;
 }
 
 #sobre-nosotros > article > div {
@@ -616,4 +618,65 @@ body > header {
 .footer .copyright span {
     width: 100%;
     color: white;
+}
+
+/*animations*/
+
+.start-animation svg {
+    display: none;
+}
+
+.start-animation.inView svg {
+    display: flex;
+    transition: all 0.5s;
+    animation: popup 1s ease-in-out ;
+}
+
+.start-animation.inView .animation1 {
+    animation: anima-1 2s ease-in-out;
+    transition: all 0.5s;
+}
+
+.start-animation.inView .animation2 {
+    animation: anima-2 2s ease-in-out;
+    transition: all 0.5s;
+}
+
+.start-animation.inView .animation3 {
+    animation: anima-1 2s ease-in-out;
+    transition: all 0.5s;
+}
+
+.start-animation.inView .animation4 {
+    animation: anima-2 2s ease-in-out;
+    transition: all 0.5s;
+}
+
+@keyframes anima-1 {
+    0% {
+        transform: translateX(10em);
+    }
+    100% {
+        transform: translateX(0em);
+    }
+}
+
+@keyframes anima-2 {
+    0% {
+        transform: translateX(-10em);
+    }
+    100% {
+        transform: translateX(0em);
+    }
+}
+
+@keyframes popup {
+    0% {
+        transform: translateX(-30em);
+        opacity: .7;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: 1;
+    }
 }

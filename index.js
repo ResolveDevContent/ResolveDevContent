@@ -68,6 +68,15 @@ const createMail = event => {
 }
 
 //-----------------------------------------------------------------------------
+function isScrolledIntoView(elem) {
+    var rect = elem.getBoundingClientRect();
+    var elemTop = rect.top;
+    var elemBottom = rect.bottom;
+  
+    var isVisible = (elemTop >= 0) && (elemBottom <= window.innerHeight);
+    
+    return isVisible;
+}
 
 let flag = true;
 window.addEventListener('scroll', () => {
@@ -75,7 +84,14 @@ window.addEventListener('scroll', () => {
         navbar.classList.toggle('top');
         flag = !flag;
     }
+
+    const container = document.querySelector('.start-animation');
+    if (isScrolledIntoView(container)) {
+        container.classList.add('inView');
+    } 
 }, true);
+
+
 
 //-------------------------------------
 
