@@ -85,10 +85,11 @@ window.addEventListener('scroll', () => {
         flag = !flag;
     }
 
-    const container = document.querySelector('.start-animation');
-    if (isScrolledIntoView(container)) {
-        container.classList.add('inView');
-    } 
+    document.querySelectorAll('.start-animation').forEach(function(container) {
+        if (isScrolledIntoView(container)) {
+            container.classList.add('inView');
+        } 
+    })
 }, true);
 
 

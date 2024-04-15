@@ -72,6 +72,8 @@ body {
 
 .navbar .navbar-responsive > article ul li a {
     color: black;
+    text-transform: uppercase;
+    font-size: 1.125em;
 }
 
 .navbar .navbar-responsive .background {
@@ -86,7 +88,10 @@ body {
     height: 100vh;
 }
 
-.navbar .navbar-responsive .menu-close,
+.navbar .navbar-responsive .menu-close {
+    width: 100%;
+}
+
 .navbar .navbar-responsive .menu-close label{
     width: 100%;
     display: flex;
