@@ -130,6 +130,10 @@ body {
     scroll-snap-type: x mandatory;
 }
 
+#servicios > header > span {
+    font-size: 1.25em;
+}
+
 #servicios .item {
     width: 100%;
     scroll-snap-align: center;
