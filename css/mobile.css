@@ -166,8 +166,10 @@ body {
 @keyframes popup {
     0% {
         transform: translateY(30px);
+        opacity: .7;
     }
     100% {
         transform: translateY(0px);
+        opacity: 1;
     }
 }

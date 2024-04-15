@@ -1,3 +1,8 @@
+:root {
+    --primary: #079992;
+    --secondary: #38ada9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -125,7 +130,7 @@ body > header {
     content: "";
     width: 1.5em;
     height: 0.125em;
-    background-color: blue;
+    background-color: var(--secondary);
     display: block;
     margin: 0 auto;
 }
@@ -140,7 +145,7 @@ body > header {
 
 .navbar .navbar-buttons a{
     padding: 0.5em;
-    background-color: blue;
+    background-color: var(--primary);
     color: white;
     border-radius: 1em;
     transition: all 0.5s;
@@ -151,7 +156,7 @@ body > header {
 }
 
 .navbar .navbar-buttons a:hover {
-    background-color: rgb(60, 60, 255);
+    background-color: var(--secondary);
 }
 
 /*----------HOME----------*/
@@ -211,7 +216,7 @@ body > header {
     padding: 0.5em;
     text-transform: uppercase;
     color: white;
-    background-color: blue;
+    background-color: var(--primary);
     border-radius: 1em;
 }
 
@@ -278,7 +283,7 @@ body > header {
 }
 
 #servicios .item > footer > a {
-    background-color: blue;
+    background-color: var(--primary);
     padding: .5em 1em;
     border-radius: 1em;
     font-weight: 600;
@@ -347,6 +352,7 @@ body > header {
     height: 15em;
     background-color: gray;
     border-radius: 50%;
+    border: 2px solid var(--primary);
 }
 
 #sobre-nosotros .personas article {
@@ -406,7 +412,7 @@ body > header {
 
 #contacto > section aside > ul > li {
     padding: 1em .5em;
-    background-color: rgba(0, 183, 255, 0.5);
+    background-color: var(--secondary);
 
 }
 
@@ -449,7 +455,8 @@ body > header {
     padding: 1em;
     margin: .5em 0;
     border-radius: 1em;
-    border: 1px solid blue;
+    border: 1px solid var(--secondary);
+    outline: var(--primary);
 }
 
 #contacto .form > div > textarea {
@@ -458,18 +465,18 @@ body > header {
 
 #contacto .form > div >input::placeholder,
 #contacto .form > div > textarea::placeholder {
-    color: blue;
+    color: black;
 }
 
 #contacto .form > div > span {
     font-size: .9em;
     font-weight: 600;
-    color: blue;
+    color: var(--secondary);
     width: 100%;
 }
 
 #contacto .form > div > a {
-    background-color: blue;
+    background-color: var(--primary);
     padding: .5em 1em;
     border-radius: 1em;
     font-weight: 600;
