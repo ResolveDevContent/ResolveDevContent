@@ -328,9 +328,9 @@ body > header {
     display: flex;
 }
 
-#sobre-nosotros > article > aside {
+/* #sobre-nosotros > article > aside {
     padding: 1em;
-}
+} */
 
 #sobre-nosotros > article > div {
     flex: 1;
