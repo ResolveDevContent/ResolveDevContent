@@ -62,6 +62,12 @@ section {
     margin: 4em 2em;
 }
 
+#sobre-nosotros > article > div > header h3,
+#servicios > header h3,
+#contacto > section > aside > header > h3 {
+    font-size: 1.75em;
+}
+
 
 /*----------NAVBAR STYLES----------*/
 
@@ -203,6 +209,16 @@ body > header {
 
 #inicio .home-text span {
     font-weight: bold;
+    font-size: 3.5em;
+
+}
+
+#inicio .home-text em {
+    font-size: 2em;
+}
+
+#inicio .home-text p {
+    font-size: 1.125em;
 }
 
 #inicio figcaption article footer a{
@@ -257,6 +273,7 @@ body > header {
     gap: 0.5em;
     margin-bottom: 1em;
     max-width: 12em;
+    font-size: 1.125em;
 }
 
 #servicios .item > header span {
@@ -330,6 +347,7 @@ body > header {
 
 #sobre-nosotros > article > div > header span {
     text-transform: uppercase;
+    font-size: 0.75em;
 }
 
 #sobre-nosotros > article > div > header h3 {
@@ -645,6 +663,15 @@ body > header {
 #contacto .container-mail > div > label > input {
     display: none;
 }
+
+#contacto > section > aside > header > span {
+    font-size: .9em;
+}
+
+#contacto .form > div > span {
+    font-size: .9em;
+}
+
 
 /*----------FOOTER----------*/
 

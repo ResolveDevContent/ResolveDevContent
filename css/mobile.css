@@ -3,11 +3,11 @@ body {
     font-size: 3.5vw;
 }
 
-#sobre-nosotros > article > div > header h3,
+/* #sobre-nosotros > article > div > header h3,
 #servicios > header h3,
 #contacto > section > aside > header > h3 {
-    /* font-size: 2.5em; */
-}
+    font-size: 2.5em;
+} */
 
 /*----------NAVBAR----------*/
 
@@ -135,21 +135,21 @@ body {
     margin-inline: 1em;
 }
 
-#inicio .home-text span {
-    /* font-size: 3em; */
+/* #inicio .home-text span {
+    font-size: 3em;
 }
 
 #inicio .home-text em {
-    /* font-size: 3em; */
+    font-size: 3em;
 }
 
 #inicio .home-text p {
-    /* font-size: 1.25em; */
+    font-size: 1.25em;
 }
 
 #inicio figcaption article footer a {
-    /* font-size: 1.25em; */
-}
+    font-size: 1.25em;
+} */
 
 /*----------SERVICIOS----------*/
 

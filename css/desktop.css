@@ -1,8 +1,8 @@
-#sobre-nosotros > article > div > header h3,
+/* #sobre-nosotros > article > div > header h3,
 #servicios > header h3,
 #contacto > section > aside > header > h3 {
     font-size: 1.75em;
-}
+} */
 
 /*----------NAVBAR----------*/
 
@@ -20,7 +20,7 @@
     max-width: 80%;
 }
 
-#inicio .home-text span {
+/* #inicio .home-text span {
     font-size: 3.5em;
 }
 
@@ -30,7 +30,7 @@
 
 #inicio .home-text p {
     font-size: 1.125em;
-}
+} */
 
 /*----------SERVICIOS----------*/
 
@@ -46,9 +46,9 @@
     min-height: 25em;
 }
 
-#servicios .item > header {
+/* #servicios .item > header {
     font-size: 1.125em;
-}
+} */
 
 /*----------SOBRE NOSOTROS----------*/
 
@@ -56,9 +56,9 @@
     width: 50%;
 }
 
-#sobre-nosotros > article > div > header span {
+/* #sobre-nosotros > article > div > header span {
     font-size: 0.75em;
-}
+} */
 
 #sobre-nosotros .personas > li > header > img {
     height: 15em;
@@ -89,13 +89,13 @@
     padding: 3em;
 }
 
-#contacto > section > aside > header > span {
+/* #contacto > section > aside > header > span {
     font-size: .9em;
-}
+} */
 
-#contacto .form > div > span {
+/* #contacto .form > div > span {
     font-size: .9em;
-}
+} */
 
 /*---------FOOTER---------*/
 
@@ -115,7 +115,7 @@
 }
 
 .footer .footer-brand > span {
-    font-size: .75em;
+    /* font-size: .75em; */
     width: 20em;
 }
 
