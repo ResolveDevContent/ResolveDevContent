@@ -365,16 +365,36 @@ body > header {
 
 #sobre-nosotros > footer > header {
     text-align: center;
+    background-color: #2f2f2f;
+    position: absolute;
+    margin-top: -1em;
+    margin-left: -3em;
+    padding: 0.75em 2em;
+    border-radius: .25em .5em .5em 0;
+}
+
+#sobre-nosotros > footer > header::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1.1em;
+    left: 0;
+    border-color: #000 #000 transparent transparent;
+    border-style: solid;
+    border-width: .5em;
 }
 
 #sobre-nosotros > footer > header > strong {
     font-size: 1.75em;
+    line-height: 1em;
+    color: white;
 }
 
 #sobre-nosotros .personas {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    margin-top: 4em;
 }
 
 #sobre-nosotros .personas > li {
