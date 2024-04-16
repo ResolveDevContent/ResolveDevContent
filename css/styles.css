@@ -482,7 +482,6 @@ body > header {
 #contacto  .contact-info-content h4 {
     color: white;
     font-size: 1.25em;
-    margin-bottom: 0.5em;
 }
   
 #contacto  .contact-info-content p {
@@ -566,7 +565,29 @@ body > header {
     color: #00bcd4;
   }
 
-  #contacto .container-mail > em {
+#contacto .contact-form .footer {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+#contacto .contact-form .footer > span {
+    font-size: 0.9em;
+    text-align: center;
+    color: var(--primary);
+    width: 100%;
+}
+
+#contacto .container-mail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#contacto .container-mail > em {
     color: grey;
 }
 
