@@ -461,8 +461,8 @@ body > header {
 }
   
 #contacto  .contact-info-icon {
-    height: 5em;
-    width: 5em;
+    height: 4em;
+    width: 4em;
     background-color: var(--primary);
     border-radius: 50%;
     display: flex;
