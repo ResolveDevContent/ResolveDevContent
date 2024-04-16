@@ -48,20 +48,25 @@ const createMail = event => {
     info[event.target.name] = event.target.value;
 
     const invalids = form.querySelectorAll('input:required:invalid,textarea:required:invalid');
-    if(invalids.length > 0) return;
+    if(invalids.length > 0) {
+        if(!btnEnviar.classList.contains('disabled')) {
+            btnEnviar.classList.add('disabled');
+        }
+        return;
+    };
 
     //-------------------------------------
-        
+    
+    const bodyMail = `¡Hola soy ${info.nombre}! ${info.message}, saludos cordiales.`;
     let mail;
     if(info.mail == "gmail") {
-        mail = `https://mail.google.com/mail/u/0/?fs=1&to=resolveinfo.dev@gmail.com&su=${encodeURI(info.asunto)}&body=${encodeURI(info.nombre)}${encodeURI(info.message)}&tf=cm`;
+        mail = `https://mail.google.com/mail/u/0/?fs=1&to=resolveinfo.dev@gmail.com&su=${info.asunto}&body=${bodyMail}&tf=cm`;
     }
 
     if(info.mail == "hotmail") {
-        mail = `mailto:resolveinfo.dev@gmail.com?Subject=${encodeURI(info.asunto)}&body=${encodeURI(info.nombre)}${encodeURI(info.message)}`;
+        mail = `mailto:resolveinfo.dev@gmail.com?Subject=${info.asunto}&body=${bodyMail}`;
     }
 
-    console.log(mail)
     btnEnviar.setAttribute('href', encodeURI(mail));
     btnEnviar.classList.remove('disabled');
 }
@@ -112,7 +117,10 @@ Array.from(mails).forEach(elm => {
 
         Array.from(mails).forEach(row => {
             const element = row.closest('label');
-            element.classList.toggle('active');
+
+            if(element.classList.contains('active') || row == elm) {
+                element.classList.toggle('active');
+            }
         });
         
         createMail(event);
