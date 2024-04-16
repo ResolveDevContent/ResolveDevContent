@@ -34,6 +34,10 @@
 
 /*----------SERVICIOS----------*/
 
+#servicios > div{
+    display: none;
+}
+
 #servicios > ul > li:nth-child(2) {
     transform: scale(1.125);
 }
@@ -100,12 +104,14 @@
 }
 
 .footer .footer-brand {
-    align-items: center;
+    align-items: start;
+    width: 15em;
 }
 
-.footer .footer-links,
+.footer .footer-links, 
 .footer .footer-socials {
-    align-items: center;
+    align-items: start;
+    width: 8em;
 }
 
 .footer .footer-brand > span {

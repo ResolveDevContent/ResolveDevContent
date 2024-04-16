@@ -105,8 +105,7 @@ body > header {
     justify-content: center;
 }
 
-.navbar ul li a,
-.footer .footer-links ul li a {
+.navbar ul li a {
     color: black;
     transition: all 0.5s;
     text-align: center;
@@ -382,9 +381,18 @@ body > header {
 
 #sobre-nosotros .personas li footer {
     width: 100%;
-    margin-top: 1em;
     display: flex;
     justify-content: center;
+}
+
+#sobre-nosotros .personas li footer ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sobre-nosotros .personas li footer ul li {
+  padding-inline: .25em
 }
 
 #sobre-nosotros .personas li footer a {
@@ -397,10 +405,18 @@ body > header {
     justify-content: center;
 }
 
-#sobre-nosotros .personas li footer a > img {
-    width: 1em;
-    height: 1em;
-    margin-right: .5em;
+#sobre-nosotros .personas li footer a > img,
+#sobre-nosotros .personas li footer a > i {
+    width: 1.25em;
+    height: 1.25em;
+}
+
+#sobre-nosotros .personas li footer ul li:nth-child(2) a {
+    background-color: blue;
+}
+
+#sobre-nosotros .personas li footer ul li:nth-child(3) a {
+    background-color: red;
 }
 
 #sobre-nosotros > footer > ul > li > a {
@@ -631,15 +647,18 @@ body > header {
 }
 
 .footer > section {
-    display: grid;
+    display: flex;
     gap: 2em;
     width: 100%;
-    padding: 2em;
+    padding: 2em 4em;
+    justify-content: space-around;
+    align-items: start;
 }
 
 .footer .footer-brand {
     display: flex;
     flex-direction: column;
+    gap: 1em;
 }
 
 .footer .footer-brand > span {
@@ -675,6 +694,12 @@ body > header {
 .footer .footer-socials a{
     display: flex;
     flex-direction: column;
+}
+
+.footer .footer-links ul li a {
+    color: black;
+    transition: all 0.5s;
+    text-align: start;
 }
 
 .footer .footer-socials img {

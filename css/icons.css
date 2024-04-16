@@ -48,3 +48,18 @@
     mask-image: url('../icons/service.svg');
     -webkit-mask-image: url('../icons/service.svg');
 }
+
+.icon.linkedin {
+    mask-image: url('../icons/linkedin.svg');
+    -webkit-mask-image: url('../icons/linkedin.svg');
+}
+
+.icon.rocket {
+    mask-image: url('../icons/rocket.svg');
+    -webkit-mask-image: url('../icons/rocket.svg');
+}
+
+.icon.right-arrow{
+    mask-image: url('../icons/right-arrow.svg');
+    -webkit-mask-image: url('../icons/right-arrow.svg');
+}

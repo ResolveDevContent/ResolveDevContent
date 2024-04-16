@@ -17,6 +17,7 @@ body {
 
 .navbar .navbar-responsive .icon {
     font-size: 1.5em;
+    cursor: pointer;
 }
 
 .navbar.top .navbar-responsive .icon {
@@ -83,7 +84,6 @@ body {
 .navbar .navbar-responsive > article ul li a {
     color: black;
     text-transform: uppercase;
-    font-size: 1.125em;
     width: 100%;
     display: flex;
     align-items: center;
@@ -120,6 +120,7 @@ body {
 .navbar .navbar-responsive .menu-close .icon.close {
     background-color: black;
     margin: 0;
+    cursor: pointer;
 }
 
 .navbar .navbar-responsive .popup ul li a span{
@@ -152,6 +153,24 @@ body {
 
 /*----------SERVICIOS----------*/
 
+#servicios > div {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+#servicios > div > i {
+    width: 3.5em;
+    height: 3.5em;
+    transition: all .5s;
+    animation: right-arrow 1s ease-in-out infinite;
+}
+
 #servicios > ul {
     overflow-x: auto;
     white-space: nowrap;
@@ -167,14 +186,21 @@ body {
 #servicios .item {
     width: 100%;
     scroll-snap-align: center;
+    flex-basis: auto;
+}
+
+#servicios .item > header {
+    max-width: 100%;
 }
 
 #servicios .item > header > strong {
     font-size: 1.75em;
+    white-space: initial;
 }
 
 #servicios .item > header > span {
     font-size: 1.25em;
+    white-space: initial;
 }
 
 #servicios .item > article{
@@ -319,6 +345,8 @@ body {
 
 .footer .footer-brand > span {
     font-size: 1.125em;
+    width: 100%;
+    text-align: center;
 }
 
 .footer .footer-links > em, 
@@ -363,5 +391,16 @@ body {
     100% {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+@keyframes right-arrow {
+    0% {
+        transform: translateX(30px);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(0px);
+        opacity: .7;
     }
 }
