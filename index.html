@@ -272,55 +272,79 @@
             </section>
     
             <section id="contacto">
-                <section>
-                    <aside>
-                        <header>
-                            <h3>¡Contactanos!</h3>
-                            <span>Nos comunicaremos con usted lo antes posible.</span>
-                        </header>
-                        <ul>
-                            <li>
-                                <a href="#">
-                                    <i class="icon mail"></i>
-                                    <span>resolveinfo.dev@gmail.com</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <i class="icon instagram"></i>
-                                    <span>resolve.dev</span>
-                                </a>
-                            </li>
-                        </ul>
+                <div class="contacto-container">
+                  <div class="row">
+                    <aside class="contact-info">
+                        <header class="section-header">
+                            <div class="contacto-container">
+                              <h2>Contactanos</h2>
+                              <p>Nos comunicaremos con usted lo antes posible.</p>
+                            </div>
+                          </header>
+                      <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                          <i class="icon instagram"></i>
+                        </div>
+                        
+                        <div class="contact-info-content">
+                          <h4>resolve.dev</h4>
+                        </div>
+                      </div>
+                      
+                      <div class="contact-info-item">
+                        <div class="contact-info-icon">
+                          <i class="icon mail"></i>
+                        </div>
+                        
+                        <div class="contact-info-content">
+                          <h4>resolveinfo.dev@gmail.com</h4>
+                        </div>
+                      </div>
                     </aside>
-                    <article>
-                        <div class="form">
-                            <div data-form>
-                                <input type="text" name="nombre" placeholder="Nombre" required>
-                                <input type="text" name="asunto" placeholder="Asunto" required>
-                                <textarea cols="10" rows="10" name="message" placeholder="Mensaje..." required></textarea>
-                                <div class="container-mail">
-                                    <div>
-                                        <em>Seleccione el mail a utilizar</em>
-                                    </div>
-                                    <div>
-                                        <label class="active">
-                                            <input type="radio" name="mail" value="gmail" checked>
-                                            <img src="./images/gmail.png" alt="gmail">
-                                        </label>
-                                        <label>
-                                            <input type="radio" name="mail" value="hotmail">
-                                            <img src="./images/hotmail.png" alt="hotmail">
-                                        </label>
-                                    </div>
-                                </div>
-                                <span>Complete todos los campos para realizar el envio.</span>
-                                <a href="#" data-btn class="disabled" target="_blank">Enviar</a>
+                    
+                    <section class="contact-form">
+                      <form data-form>
+                        <h2>Envianos un mensaje</h2>
+                        <div class="input-box">
+                          <input type="text" required="true" name="">
+                          <span>Nombre completo</span>
+                        </div>
+                        
+                        <div class="input-box">
+                          <input type="email" required="true" name="">
+                          <span>Asunto</span>
+                        </div>
+                        
+                        <div class="input-box">
+                          <textarea required="true" name=""></textarea>
+                          <span>Escribi tu mensaje...</span>
+                        </div>
+                        <div class="container-mail">
+                            <div>
+                                <em>Seleccione el mail a utilizar</em>
+                            </div>
+                            <div>
+                                <label class="active">
+                                    <input type="radio" name="mail" value="gmail" checked>
+                                    <img src="./images/gmail.png" alt="gmail">
+                                </label>
+                                <label>
+                                    <input type="radio" name="mail" value="hotmail">
+                                    <img src="./images/hotmail.png" alt="hotmail">
+                                </label>
                             </div>
                         </div>
-                    </article>
-                </section>
-            </section>
+                        <span>Complete todos los campos para realizar el envio.</span>
+
+                        <div class="input-box">
+                          <input type="submit" value="Enviar" name="" data-btn class="disabled">
+                        </div>
+                      </form>
+                    </section>
+                    
+                  </div>
+                </div>
+              </section>
     
             <footer class="footer">
                 <section>

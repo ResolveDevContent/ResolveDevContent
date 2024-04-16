@@ -261,53 +261,32 @@ body {
 
 /*----------CONTACTO----------*/
 
-#contacto > section {
-    flex-direction: column;
-    gap: 2em;
-}
-
-#contacto > section aside {
-    width: 100%;
-}
-
-#contacto > section article {
-    width: 100%;
-}
-
-#contacto .form {
-    width: 100%;
-    padding: 2em;
-}
-
-#contacto > section > aside > header > span {
-    font-size: 1.25em;
-}
-
-#contacto > section aside > ul > li a {
-    font-size: 1.325em;
-}
-
-#contacto .form > div > input, 
-#contacto .form > div > textarea {
-    font-size: 1.125em;
-}
 
 #contacto .container-mail {
-    font-size: 1.25em;
-}
-
-#contacto .form > div > span {
-    font-size: 1.125em;
-}
-
-#contacto .form > div > a {
-    margin-top: 1em;
     font-size: 1.25em;
 }
 
 #contacto .form .container-mail > div > label img {
     width: 2em;
     height: 2em;
+}
+
+#contacto {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#contacto .row {
+    flex-direction: column;
+}
+
+#contacto .contact-info {
+    margin-bottom: 40px;
+    width: 100%;
+}
+
+#contacto .contact-form {
+    width: 100%;
 }
 
 /*----------FOOTER----------*/
