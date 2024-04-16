@@ -48,6 +48,7 @@ const createMail = event => {
     info[event.target.name] = event.target.value;
 
     const invalids = form.querySelectorAll('input:required:invalid,textarea:required:invalid');
+    console.log(invalids)
     if(invalids.length > 0) {
         if(!btnEnviar.classList.contains('disabled')) {
             btnEnviar.classList.add('disabled');
@@ -107,6 +108,12 @@ window.addEventListener('scroll', () => {
 
 Array.from(mailsData).forEach(elm => {
     elm.addEventListener('input', debounce(createMail));
+
+    elm.addEventListener('change', function(evt) {
+        if(elm.value || !elm.value) {
+            elm.classList.toggle('input-active');
+        }
+    })
 })
 
 //-------------------------------------
