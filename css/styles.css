@@ -283,6 +283,10 @@ body > header {
     background-color: #78e08f;
 }
 
+#servicios .item > article > ul > li > span{
+    white-space: pre-wrap;
+}
+
 #servicios .item > footer {
     margin-top: 2em;
     text-align: center;
@@ -419,10 +423,16 @@ body > header {
     background-color: red;
 }
 
-#sobre-nosotros > footer > ul > li > a {
-    color: grey;
-    width: 100%;
-    text-align: center;
+#sobre-nosotros .personas li footer ul li:nth-child(2) a:hover {
+    background-color: rgb(93, 93, 255);
+}
+
+#sobre-nosotros .personas li footer ul li:nth-child(3) a:hover {
+    background-color: rgb(255, 82, 82);
+}
+
+#sobre-nosotros .personas li footer a:hover {
+    background-color: rgb(172, 172, 172);
 }
 
 /*----------CONTACTO----------*/
