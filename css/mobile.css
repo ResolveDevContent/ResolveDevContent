@@ -295,8 +295,8 @@ body {
 }
 
 #contacto {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 3em;
+    padding-bottom: 3em;
 }
 
 #contacto .row {
@@ -304,7 +304,7 @@ body {
 }
 
 #contacto .contact-info {
-    margin-bottom: 40px;
+    margin-bottom: 2.5em;
     width: 100%;
 }
 
@@ -318,7 +318,7 @@ body {
 #contacto .contact-form .input-box input.input-active ~ span{
     color: var(--primary);
     /* font-size: 0.9em; */
-    transform: translateY(-30px);
+    transform: translateY(-20px);
 }
 
 /*----------FOOTER----------*/
