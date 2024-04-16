@@ -12,7 +12,7 @@ body {
 /*----------NAVBAR----------*/
 
 .navbar .navbar-logo {
-    width: 15em;
+    width: 10em;
 }
 
 .navbar .navbar-responsive .icon {
@@ -155,7 +155,7 @@ body {
 
 #servicios > div {
     position: absolute;
-    right: 30px;
+    right: 1em;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -318,7 +318,7 @@ body {
 #contacto .contact-form .input-box input.input-active ~ span{
     color: var(--primary);
     /* font-size: 0.9em; */
-    transform: translateY(-20px);
+    transform: translateY(-1.5em);
 }
 
 /*----------FOOTER----------*/
@@ -388,7 +388,7 @@ body {
 
 @keyframes popup {
     0% {
-        transform: translateY(30px);
+        transform: translateY(2em);
         opacity: .7;
     }
     100% {
@@ -399,11 +399,39 @@ body {
 
 @keyframes right-arrow {
     0% {
-        transform: translateX(30px);
+        transform: translateX(1em);
         opacity: 1;
     }
     100% {
         transform: translateX(0px);
         opacity: .7;
+    }
+}
+
+/*--------------------*/
+
+@media screen and (min-width:400px) and (max-width:960px) {
+    #inicio figcaption article {
+        margin-inline: 3em;
+    }
+
+    #inicio .home-text em {
+        font-size: 1.325em;
+    }
+
+    #inicio .home-text span {
+        font-size: 1.25em;
+    }
+
+    #inicio .home-text p {
+        font-size: .625em;
+    }
+
+    #inicio figcaption article footer a {
+        font-size: .5em;
+    }
+
+    #inicio figcaption article {
+        gap: 1em;
     }
 }

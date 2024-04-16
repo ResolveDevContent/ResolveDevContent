@@ -83,7 +83,7 @@ body > header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1em 2em;
+    padding: .5em 2em;
     background-color: white;
     transition: 1s all;
 
@@ -520,7 +520,7 @@ body > header {
 }
   
 #contacto .contact-info-content {
-    margin-left: 20px;
+    margin-left: .75em;
 }
   
 #contacto  .contact-info-content h4 {
@@ -584,7 +584,7 @@ body > header {
 #contacto .contact-form .input-box input.input-active ~ span{
     color: var(--primary);
     font-size: 0.9em;
-    transform: translateY(-20px);
+    transform: translateY(-1.5em);
 }
   
 #contacto .contact-form .input-box a
@@ -652,8 +652,8 @@ body > header {
 }
 
 #contacto .container-mail > div > label img {
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
 }
 
 #contacto .container-mail > div > label.active {
@@ -699,7 +699,6 @@ body > header {
 }
 
 .footer .footer-brand > span {
-    font-size: .75em;
     width: 20em;
 }
 
@@ -758,13 +757,13 @@ body > header {
 /*animations*/
 
 .start-animation svg {
-    display: none;
+    opacity: 0;
 }
 
 .start-animation.inView svg{
-    display: flex;
     transition: all 0.5s;
-    animation: translate 1s ease-in-out ;
+    animation: translate 1s ease-in-out;
+    opacity: 1;
 }
 
 .start-animation.inView .animation1 {
