@@ -189,7 +189,8 @@ body {
     overflow-x: auto;
     white-space: nowrap;
     gap: 2em;
-    
+    width: 100%;
+    justify-content: space-evenly;
     scroll-snap-type: x mandatory;
 }
 

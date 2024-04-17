@@ -249,11 +249,7 @@ body > header {
     display: flex;
     align-items: stretch;
     margin-bottom: 2em;
-    gap: 1em;
-    flex-wrap: wrap;
-    justify-content: center;
-    position: relative;
-    transform-style: preserve-3d;
+
 }
 
 #servicios .item {
@@ -265,31 +261,8 @@ body > header {
     display: flex;
     flex-direction: column;
 
-
-    margin: 2em 0.5em;
-    overflow: hidden;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 
-#servicios > ul:hover .item,
-#servicios > ul:focus .item,
-#servicios > ul:active .item {
-	transform: perspective(500px) rotateY(30deg);
-}
-
-#servicios > ul .item:hover,
-#servicios > ul .item:focus,
-#servicios > ul .item:active {
-	transform: perspective(500px) rotateY(0);
-}
-
-#servicios > ul .item:hover ~ .item,
-#servicios > ul .item:focus ~ .item,
-#servicios > ul .item:active ~ .item {
-	transform: perspective(500px) rotateY(-30deg);
-}
 
 #servicios .item > header {
     position: relative;
