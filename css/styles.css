@@ -274,13 +274,10 @@ body > header {
     gap: 0.5em;
     margin-bottom: 1em;
     max-width: 12em;
-    font-size: 1.125em;
-
-    margin-top: 2em;
 }
 
 #servicios .item > header span {
-    font-size: 0.7em;
+    font-size: 0.875em;
 }
 
 #servicios .item > article {

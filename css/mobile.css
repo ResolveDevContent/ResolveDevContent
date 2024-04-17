@@ -188,10 +188,12 @@ body {
 
 #servicios .item > header {
     max-width: 100%;
+    margin-top: 1em;
 }
 
 #servicios .item > header > strong {
     white-space: initial;
+    font-size: 1.75em;
 }
 
 #servicios .item > header > span {

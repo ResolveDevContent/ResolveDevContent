@@ -41,7 +41,6 @@
 
 #servicios > ul {
     gap: 1em;
-    flex-wrap: wrap;
     justify-content: center;
     position: relative;
     transform-style: preserve-3d;
@@ -76,6 +75,15 @@
 #servicios > ul .item:focus ~ .item,
 #servicios > ul .item:active ~ .item {
 	transform: perspective(500px) rotateY(-30deg);
+}
+
+#servicios .item > header {
+    margin-top: 2em;
+}
+
+#servicios .item > header > strong {
+    white-space: initial;
+    font-size: 1.25em;
 }
 
 /*----------SOBRE NOSOTROS----------*/
