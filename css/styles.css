@@ -207,7 +207,8 @@ body > header {
 #inicio .home-text span {
     font-weight: bold;
     font-size: 3.5em;
-
+    height: 2.75em;
+    line-height: 1.25em;
 }
 
 #inicio .home-text em {
@@ -224,6 +225,22 @@ body > header {
     color: white;
     background-color: var(--primary);
     border-radius: 1em;
+}
+
+#inicio .word {
+    color: var(--secondary);
+    position: relative;
+}
+
+#inicio .word::after {
+    content: "";
+    position: relative;
+    width: calc(100% + 8px);
+    height: 100%;
+    background-color: transparent;
+    border-left: 2px solid var(--secondary);
+    right: -8px;
+    animation: cursor .8s infinite;
 }
 
 /*----------SERVICIOS----------*/
@@ -457,7 +474,7 @@ body > header {
 }
 
 #sobre-nosotros .personas li footer ul li:nth-child(2) a {
-    background-color: blue;
+    background-color: #0077B5;
 }
 
 #sobre-nosotros .personas li footer ul li:nth-child(3) a {
@@ -470,6 +487,11 @@ body > header {
 
 #sobre-nosotros .personas li footer ul li:nth-child(3) a:hover {
     background-color: rgb(255, 82, 82);
+}
+
+#sobre-nosotros .personas li footer ul li:nth-child(2) a i,
+#sobre-nosotros .personas li footer ul li:nth-child(3) a i {
+    background-color: white;
 }
 
 #sobre-nosotros .personas li footer a:hover {
@@ -836,5 +858,11 @@ body > header {
     100% {
         transform: translateX(0px);
         opacity: 1;
+    }
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid #38ada900;
     }
 }
