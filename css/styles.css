@@ -205,6 +205,7 @@ body > header {
 
 #inicio .home-text p {
     font-size: 1.125em;
+    max-width: 50em;
 }
 
 #inicio figcaption article footer a{
@@ -225,7 +226,6 @@ body > header {
     position: relative;
     background-color: transparent;
     border-left: 2px solid var(--secondary);
-    right: -8px;
     animation: cursor .8s infinite;
 }
 

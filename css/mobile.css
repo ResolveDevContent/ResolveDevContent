@@ -5,10 +5,6 @@ body {
 
 /*----------NAVBAR----------*/
 
-#inicio .word::after {
-    right: 0;
-}
-
 .navbar .navbar-logo {
     width: 10em;
 }
