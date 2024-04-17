@@ -55,6 +55,26 @@ section {
     font-size: 1.75em;
 }
 
+.ribbon {
+    text-align: center;
+    background-color: #2f2f2f;
+    position: absolute;
+    margin-top: -1em;
+    margin-left: -3em;
+    padding: 0.75em 2em;
+    border-radius: .25em .5em .5em 0;
+}
+
+.ribbon::before {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -1.1em;
+    left: 0;
+    border-color: #000 #000 transparent transparent;
+    border-style: solid;
+    border-width: .5em;
+}
 
 /*----------NAVBAR STYLES----------*/
 
@@ -216,6 +236,10 @@ body > header {
     border-radius: 1em;
 }
 
+#inicio figcaption article footer a:hover {
+    background-color: var(--secondary);
+}
+
 #inicio .word {
     color: var(--secondary);
     position: relative;
@@ -266,6 +290,10 @@ body > header {
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
 }
 
+#servicios .item > div > strong {
+    color: white;
+    font-size: 1.25em;
+}
 
 #servicios .item > header {
     position: relative;
@@ -322,27 +350,6 @@ body > header {
     background-color: var(--secondary);
 }
 
-#servicios .item > div {
-    text-align: center;
-    background-color: #2f2f2f;
-    position: absolute;
-    margin-top: -1em;
-    margin-left: -3em;
-    padding: 0.75em 2em;
-    border-radius: .25em .5em .5em 0;
-    color: white;
-}
-
-#servicios .item > div::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -1.1em;
-    left: 0;
-    border-color: #000 #000 transparent transparent;
-    border-style: solid;
-    border-width: .5em;
-}
 
 /*----------SOBRE NOSOTROS----------*/
 
@@ -360,7 +367,7 @@ body > header {
 }
 
 #sobre-nosotros > article > div > header {
-    padding: 2em 0; 
+    padding-top: 1em; 
 }
 
 #sobre-nosotros > article > div > header span {
@@ -383,27 +390,6 @@ body > header {
     padding: 2em;
     border-radius: 1em;
     box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-}
-
-#sobre-nosotros > footer > header {
-    text-align: center;
-    background-color: #2f2f2f;
-    position: absolute;
-    margin-top: -1em;
-    margin-left: -3em;
-    padding: 0.75em 2em;
-    border-radius: .25em .5em .5em 0;
-}
-
-#sobre-nosotros > footer > header::before {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: -1.1em;
-    left: 0;
-    border-color: #000 #000 transparent transparent;
-    border-style: solid;
-    border-width: .5em;
 }
 
 #sobre-nosotros > footer > header > strong {
@@ -589,12 +575,15 @@ body > header {
     border-radius: 1em;
     box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1);
 }
+
+#contacto .contact-form > form {
+    margin-top: 3em;
+}
   
 #contacto .contact-form h2 {
     font-weight: bold;
     font-size: 1.25em;
-    margin-bottom: 0.5em;
-    color: #333;
+    color: white;
 }
   
 #contacto .contact-form .input-box {

@@ -176,6 +176,7 @@ body {
 
 #servicios .item > div {
     position: initial;
+    width: 90%;
 }
 
 #servicios .item > div::before {
@@ -244,6 +245,10 @@ body {
 
 #sobre-nosotros .personas article {
     width: 100%;
+}
+
+#sobre-nosotros > footer > header {
+    width: 90%;
 }
 
 /*----------CONTACTO----------*/

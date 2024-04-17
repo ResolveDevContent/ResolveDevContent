@@ -135,7 +135,7 @@ Array.from(mails).forEach(elm => {
 
 //-----------------------------------------------------------------------------
 
-let palabras = ['Soluciones Tecnologicas.', 'Lionel Messi.', 'Edinson Cavani.'],
+let palabras = ['Desarrollo web.', 'Soluciones Tecnologicas.', 'Innovación.'],
     letras,
     i = 0,
     substring = 0,
