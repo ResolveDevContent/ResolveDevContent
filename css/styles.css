@@ -175,6 +175,7 @@ body > header {
     height: 100vh;
 
     background-image: linear-gradient(rgba(0, 0, 0, 0.42) 17.31%, rgb(17, 17, 17) 101.85%), url("../images/banner.avif");
+    background-attachment: fixed;
 }
 
 #inicio figcaption {
@@ -245,11 +246,14 @@ body > header {
 }
 
 #servicios > ul {
-    width: 100%;
     display: flex;
     align-items: stretch;
-    justify-content: space-evenly;
     margin-bottom: 2em;
+    gap: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    transform-style: preserve-3d;
 }
 
 #servicios .item {
@@ -260,6 +264,31 @@ body > header {
 
     display: flex;
     flex-direction: column;
+
+
+    margin: 2em 0.5em;
+    overflow: hidden;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+}
+
+#servicios > ul:hover .item,
+#servicios > ul:focus .item,
+#servicios > ul:active .item {
+	transform: perspective(500px) rotateY(30deg);
+}
+
+#servicios > ul .item:hover,
+#servicios > ul .item:focus,
+#servicios > ul .item:active {
+	transform: perspective(500px) rotateY(0);
+}
+
+#servicios > ul .item:hover ~ .item,
+#servicios > ul .item:focus ~ .item,
+#servicios > ul .item:active ~ .item {
+	transform: perspective(500px) rotateY(-30deg);
 }
 
 #servicios .item > header {
@@ -480,6 +509,7 @@ body > header {
     position: relative;
     width: 100%;
     background-image:linear-gradient(rgba(0, 0, 0, 0.42) 17.31%, rgb(17, 17, 17) 101.85%), url('../images/contact.jpg');
+    background-attachment: fixed;
     background-size: cover;
     background-position: center;
     position: relative;
