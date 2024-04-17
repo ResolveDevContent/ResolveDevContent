@@ -355,7 +355,7 @@ body {
 
 /*--------------------*/
 
-@media screen and (min-width:400px) and (max-width:960px) {
+@media screen and (min-width:600px) and (max-width:960px) {
     #inicio figcaption article {
         margin-inline: 3em;
     }
@@ -378,5 +378,23 @@ body {
 
     #inicio figcaption article {
         gap: 1em;
+    }
+}
+
+@media screen and (max-width:599px) {
+    #inicio .home-text em {
+        font-size: 2em;
+    }
+
+    #inicio .home-text span {
+        font-size: 1.75em;
+    }
+
+    #inicio .home-text p {
+        font-size: .9em;
+    }
+
+    #inicio figcaption article footer a {
+        font-size: .875em;
     }
 }
