@@ -86,11 +86,11 @@ function isScrolledIntoView(elem) {
 
 //-----------------------------------------------------------------------------
 
-let flag = true;
+let toggle = true;
 window.addEventListener('scroll', () => {
-    if(window.scrollY == 0 && !flag || window.scrollY > 0 && flag) {
+    if(window.scrollY == 0 && !toggle || window.scrollY > 0 && toggle) {
         navbar.classList.toggle('top');
-        flag = !flag;
+        toggle = !toggle;
     }
 
     document
@@ -136,48 +136,40 @@ Array.from(mails).forEach(elm => {
 
 //-----------------------------------------------------------------------------
 
-let words = ['Soluciones Tecnologicas.', 'Lionel Messi.', 'Edinson Cavani.'],
-    part,
+let palabras = ['Soluciones Tecnologicas.', 'Lionel Messi.', 'Edinson Cavani.'],
+    letras,
     i = 0,
-    offset = 0,
-    len = words.length,
-    forwards = true,
-    skip_count = 0,
-    skip_delay = 20,
+    substring = 0,
+    len = palabras.length,
+    flag = true,
+    count = 0,
+    delay = 20,
     speed = 120;
 
-let wordflick = function () {
+let typing = function () {
   setInterval(function () {
-    if (forwards) {
-      if (offset >= words[i].length) {
-        ++skip_count;
-        if (skip_count == skip_delay) {
-          forwards = false;
-          skip_count = 0;
-        }
+    if (flag && substring >= palabras[i].length) {
+      ++count;
+      if (count == delay) {
+        flag = false;
+        count = 0;
       }
-    }
-    else {
-      if (offset == 0) {
-        forwards = true;
+    } else if (substring == 0) {
+        flag = true;
         i++;
-        offset = 0;
-        if (i >= len) {
-          i = 0;
-        }
-      }
+
+        if (i >= len) i = 0;
     }
-    part = words[i].substr(0, offset);
-    if (skip_count == 0) {
-      if (forwards) {
-        offset++;
-      }
-      else {
-        offset--;
-      }
+
+    letras = palabras[i].slice(0, substring);
+
+    if (count == 0) {
+      if (flag) substring++;
+      else substring--;
     }
-    document.querySelector(".word").innerText = part;
+
+    document.querySelector(".word").innerText = letras;
   },speed);
 };
 
-  wordflick();
+typing();
