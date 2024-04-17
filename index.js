@@ -26,7 +26,7 @@ const btnEnviar   = document.querySelector('[data-btn]'),
       info        = {
           nombre : '',
           asunto : '',
-          message: '',
+          mensaje: '',
           mail   : document.querySelector('input[name="mail"]:checked').value 
         };
 
@@ -48,7 +48,6 @@ const createMail = event => {
     info[event.target.name] = event.target.value;
 
     const invalids = form.querySelectorAll('input:required:invalid,textarea:required:invalid');
-    console.log(invalids)
     if(invalids.length > 0) {
         if(!btnEnviar.classList.contains('disabled')) {
             btnEnviar.classList.add('disabled');
@@ -58,7 +57,7 @@ const createMail = event => {
 
     //-------------------------------------
     
-    const bodyMail = `¡Hola soy ${info.nombre}! ${info.message}, saludos cordiales.`;
+    const bodyMail = `¡Hola soy ${info.nombre}! ${info.mensaje}, saludos cordiales.`;
     let mail;
     if(info.mail == "gmail") {
         mail = `https://mail.google.com/mail/u/0/?fs=1&to=resolveinfo.dev@gmail.com&su=${info.asunto}&body=${bodyMail}&tf=cm`;

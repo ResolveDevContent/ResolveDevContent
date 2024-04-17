@@ -3,20 +3,17 @@ body {
     font-size: 3.5vw;
 }
 
-/* #sobre-nosotros > article > div > header h3,
-#servicios > header h3,
-#contacto > section > aside > header > h3 {
-    font-size: 2.5em;
-} */
-
 /*----------NAVBAR----------*/
+
+#inicio .word::after {
+    right: 0;
+}
 
 .navbar .navbar-logo {
     width: 10em;
 }
 
 .navbar .navbar-responsive .icon {
-    /* font-size: 1.5em; */
     cursor: pointer;
 }
 
@@ -26,7 +23,6 @@ body {
 
 .navbar .navbar-responsive article.popup .icon {
     background-color: var(--primary);
-    /* font-size: 1.25em; */
     margin-right: .625em;
 }
 
@@ -107,7 +103,6 @@ body {
 }
 
 .navbar .navbar-responsive .menu-close em {
-    /* font-size: 1.75em; */
     font-weight: bolder;
 }
 
@@ -125,7 +120,6 @@ body {
 
 .navbar .navbar-responsive .popup ul li a span{
     font-weight: bold;
-    /* font-size: 1.125em; */
 }
 
 .navbar .navbar-responsive ul li a span::after{
@@ -151,22 +145,6 @@ body {
     max-width: 100%;
     margin-inline: 1em;
 }
-
-/* #inicio .home-text span {
-    font-size: 3em;
-}
-
-#inicio .home-text em {
-    font-size: 3em;
-}
-
-#inicio .home-text p {
-    font-size: 1.25em;
-}
-
-#inicio figcaption article footer a {
-    font-size: 1.25em;
-} */
 
 /*----------SERVICIOS----------*/
 
@@ -194,14 +172,18 @@ body {
     scroll-snap-type: x mandatory;
 }
 
-#servicios > header > span {
-    /* font-size: 1.25em; */
-}
-
 #servicios .item {
     width: 100%;
     scroll-snap-align: center;
     flex: none;
+}
+
+#servicios .item > div {
+    position: initial;
+}
+
+#servicios .item > div::before {
+    display: none;
 }
 
 #servicios .item > header {
@@ -209,30 +191,19 @@ body {
 }
 
 #servicios .item > header > strong {
-    /* font-size: 1.75em; */
     white-space: initial;
 }
 
 #servicios .item > header > span {
-    /* font-size: 1.25em; */
     white-space: initial;
 }
 
 #servicios .item > article{
-    /* font-size: 1.5em; */
     margin-top: .5em;
-}
-
-#servicios .item > footer > a {
-    /* font-size: 1.325em; */
 }
 
 #servicios footer {
     text-align: center;
-}
-
-#servicios footer > a {
-    /* font-size: 1.325em; */
 }
 
 /*----------SOBRE NOSOTROS---------*/
@@ -244,6 +215,7 @@ body {
 #sobre-nosotros .personas {
     flex-direction: column;
     gap: 2em;
+    margin-top: 6em;
 }
 
 #sobre-nosotros > article > aside {
@@ -252,14 +224,6 @@ body {
 
 #sobre-nosotros > article > div > header {
     margin-bottom: 2em; 
-}
-
-#sobre-nosotros > article > div > header span {
-    /* font-size: 1.25em; */
-}
-
-#sobre-nosotros > article > div > p {
-    /* font-size: 1.125em; */
 }
 
 #sobre-nosotros .personas > li {
@@ -277,35 +241,14 @@ body {
 
 #sobre-nosotros .personas > li > header > img {
     width: 70%;
-    height: 18em;
+    height: auto;
 }
 
 #sobre-nosotros .personas article {
     width: 100%;
 }
 
-#sobre-nosotros .personas article strong{
-    /* font-size: 1.625em; */
-}
-
-#sobre-nosotros .personas article em{
-    /* font-size: 1.25em; */
-}
-
-#sobre-nosotros .personas article span{
-    /* font-size: 1.125em; */
-}
-
-#sobre-nosotros .personas li footer a {
-    /* font-size: 1.25em; */
-}
-
 /*----------CONTACTO----------*/
-
-
-#contacto .container-mail {
-    /* font-size: 1.25em; */
-}
 
 #contacto .form .container-mail > div > label img {
     width: 2em;
@@ -335,7 +278,6 @@ body {
 #contacto .contact-form .input-box textarea.input-active ~ span,
 #contacto .contact-form .input-box input.input-active ~ span{
     color: var(--primary);
-    /* font-size: 0.9em; */
     transform: translateY(-1.5em);
 }
 
@@ -365,22 +307,12 @@ body {
 }
 
 .footer .footer-brand > span {
-    /* font-size: 1.125em; */
     width: 100%;
     text-align: center;
 }
 
-.footer .footer-links > em, 
-.footer .footer-socials > em {
-    /* font-size: 1.75em; */
-}
-
 .footer .footer-links > ul > li {
     margin-block: .25em;
-}
-
-.footer .footer-links > ul > li > a {
-    /* font-size: 1.5em; */
 }
 
 .footer .footer-socials > ul > li {
@@ -390,11 +322,6 @@ body {
 .footer .footer-socials > ul > li img {
     width: 3.5em;
 }
-
-.footer .copyright span {
-    /* font-size: 1.325em; */
-}
-
 
 /*--------------------*/
 
