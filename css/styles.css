@@ -45,8 +45,9 @@ section {
 }
 
 #servicios,
-#sobre-nosotros {
-    margin: 4em 2em;
+#sobre-nosotros,
+#contacto {
+    padding: 4em 2em;
 }
 
 #sobre-nosotros > article > div > header h3,
@@ -496,7 +497,6 @@ body > header {
     background-size: cover;
     background-position: center;
     position: relative;
-    padding: 4em 2em;
 }
   
 #contacto  .contacto-container {
