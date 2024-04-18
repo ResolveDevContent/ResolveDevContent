@@ -254,6 +254,10 @@ body {
 
 /*----------CONTACTO----------*/
 
+#contacto .form .container-mail {
+    display: none;
+}
+
 #contacto .form .container-mail > div > label img {
     width: 2em;
     height: 2em;
