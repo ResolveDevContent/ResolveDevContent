@@ -99,7 +99,7 @@ section {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: var(--secondary);
+    background-color: var(--primary);
     z-index: 100;
     min-height: 100vh;
     display: flex;
@@ -130,6 +130,7 @@ section {
     font-size: 1.5em;
     font-weight: bold;
     animation: preloader 2s ease-in-out infinite;
+    color: black;
 }
 
 .preloader > div {
@@ -139,7 +140,7 @@ section {
 
 
 .preloader > div > i {
-    background-color: white;
+    background-color: black;
     width: 1.25em;
     height: 1.25em;
     margin-left: .25em;
@@ -148,6 +149,7 @@ section {
 .preloader > div > span {
     margin-top: .25em;
     font-size: .9em;
+    color: black;
 }
 
 /*----------NAVBAR STYLES----------*/
