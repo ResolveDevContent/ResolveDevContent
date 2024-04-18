@@ -213,7 +213,7 @@ typing();
 //-----------------------------------------------------------------------------
 
 document.querySelectorAll('.popup').forEach(function(menu) {
-  const items = menu.querySelectorAll('ul > li');
+  const items = menu.querySelectorAll('ul > li > a');
   const checkbox = document.querySelector('input#menu');
 
   items.forEach(function(item) {
