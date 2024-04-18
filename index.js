@@ -85,6 +85,38 @@ function isScrolledIntoView(elem) {
 
 //-----------------------------------------------------------------------------
 
+document.addEventListener('DOMContentLoaded', function() {
+    const media = Array.from(document.querySelectorAll('img, video'));
+
+    console.log(media)
+  
+    Promise.all(media.map(function(m) {
+      return new Promise(function(res, rej) {
+        if(m.tagName == 'IMG') {
+          m.addEventListener('load', () => {
+            console.log("carga")
+            res();
+          });
+        }
+        if(m.tagName == 'VIDEO') {
+          m.addEventListener('loadeddata', res);
+        }
+        setTimeout(function() {
+          res();
+        }, 5000)
+      })
+    }))
+    .then(function() {
+      document
+        .querySelectorAll('#preloader')
+        .forEach(function(preloader) {
+          preloader.classList.add('hidden');
+        });
+    });
+  });
+
+//-------------------------------------
+
 let toggle = true;
 window.addEventListener('scroll', () => {
     if(window.scrollY == 0 && !toggle || window.scrollY > 0 && toggle) {
@@ -100,8 +132,6 @@ window.addEventListener('scroll', () => {
             } 
         });
 }, true);
-
-
 
 //-------------------------------------
 
