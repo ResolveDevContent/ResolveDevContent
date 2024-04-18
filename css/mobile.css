@@ -254,7 +254,7 @@ body {
 
 /*----------CONTACTO----------*/
 
-#contacto .form .container-mail {
+#contacto .container-mail {
     display: none;
 }
 
