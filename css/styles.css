@@ -16,6 +16,10 @@ body {
     background-color: whitesmoke;
 }
 
+body.is-loading {
+    overflow: hidden;
+}
+
 a {
     text-decoration: none;
     color: black;

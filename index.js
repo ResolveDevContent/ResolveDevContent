@@ -108,6 +108,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .querySelectorAll('#preloader')
         .forEach(function(preloader) {
           preloader.classList.add('hidden');
+          document.body.classList.remove('is-loading');
         });
     });
   });
