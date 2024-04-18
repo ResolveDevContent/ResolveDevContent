@@ -59,6 +59,10 @@
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 
+#servicios .item > div {
+    width: 112%;
+}
+
 #servicios > ul:hover .item,
 #servicios > ul:focus .item,
 #servicios > ul:active .item {
@@ -78,7 +82,7 @@
 }
 
 #servicios .item > header {
-    margin-top: 2em;
+    margin-top: 2.5em;
 }
 
 #servicios .item > header > strong {
@@ -115,6 +119,10 @@
     max-width: 15em;
 }
 
+#sobre-nosotros > footer > header {
+    width: 97%;
+}
+
 /*----------CONTACTO----------*/
 
 #contacto > section aside {
@@ -130,6 +138,10 @@
 #contacto .form {
     width: 70%;
     padding: 3em;
+}
+
+#contacto .contact-form > header {
+    width: 107%;
 }
 
 /*---------FOOTER---------*/

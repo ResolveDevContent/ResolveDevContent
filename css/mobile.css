@@ -176,7 +176,7 @@ body {
 
 #servicios .item > div {
     position: initial;
-    width: 90%;
+    width: 130%;
 }
 
 #servicios .item > div::before {
@@ -248,7 +248,7 @@ body {
 }
 
 #sobre-nosotros > footer > header {
-    width: 90%;
+    width: 93%;
 }
 
 /*----------CONTACTO----------*/
@@ -274,6 +274,10 @@ body {
 
 #contacto .contact-form {
     width: 100%;
+}
+
+#contacto .contact-form > header {
+    width: 108%;
 }
 
 #contacto .contact-form .input-box input:focus ~ span,
