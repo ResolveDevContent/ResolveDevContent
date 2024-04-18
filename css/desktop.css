@@ -63,10 +63,6 @@
     z-index: 4;
 }
 
-#servicios .item > div {
-    width: 112%;
-}
-
 #servicios > ul:hover .item,
 #servicios > ul:focus .item,
 #servicios > ul:active .item {
@@ -123,9 +119,6 @@
     max-width: 15em;
 }
 
-#sobre-nosotros > footer > header {
-    width: 97%;
-}
 
 /*----------CONTACTO----------*/
 
@@ -142,10 +135,6 @@
 #contacto .form {
     width: 70%;
     padding: 3em;
-}
-
-#contacto .contact-form > header {
-    width: 107%;
 }
 
 /*---------FOOTER---------*/
