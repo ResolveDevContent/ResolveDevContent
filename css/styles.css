@@ -371,11 +371,11 @@ body > header {
     flex-direction: column;
     gap: 0.5em;
     margin-bottom: 1em;
-    max-width: 12em;
+    max-width: 16em;
 }
 
 #servicios .item > header span {
-    font-size: 0.875em;
+    font-size: 0.75em;
 }
 
 #servicios .item > article {

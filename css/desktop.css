@@ -59,6 +59,10 @@
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
 }
 
+#servicios .item:nth-child(2) {
+    z-index: 4;
+}
+
 #servicios .item > div {
     width: 112%;
 }
