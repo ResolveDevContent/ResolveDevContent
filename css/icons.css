@@ -62,7 +62,7 @@
     -webkit-mask-image: url('../icons/right-arrow.svg');
 }
 
-.icon.coffe {
-    mask-image: url('../icons/coffe.svg');
-    -webkit-mask-image: url('../icons/coffe.svg');
+.icon.coffee {
+    mask-image: url('../icons/coffee.svg');
+    -webkit-mask-image: url('../icons/coffee.svg');
 }
