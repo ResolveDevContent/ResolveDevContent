@@ -104,6 +104,12 @@ section {
     flex-direction: column;
 }
 
+#preloader.hidden .preloader {
+    animation: splash2 2s ease-in;
+    animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+}
+
 .preloader > em {
     font-size: 1.5em;
     font-weight: bold;
@@ -910,6 +916,34 @@ body > header {
     }
     50% {
       transform: translate(0%,0%);
+    }
+    75% {
+        opacity: .9;
+    }
+    80% {
+        opacity: .8;
+    }
+    85% {
+        opacity: .7;
+    }
+    90% {
+        opacity: .6;
+    }
+    95% {
+        opacity: .5;
+    }
+    100% {
+      transform: translate(0%,-100%);
+      opacity: .4;
+    }
+}
+
+@keyframes splash2 {
+    0% {
+      transform: translate(0%,0%);
+    }
+    50% {
+      transform: translate(0%,50%);
     }
     100% {
       transform: translate(0%,-100%);
