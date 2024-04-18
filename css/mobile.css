@@ -194,6 +194,7 @@ body {
 
 #servicios .item > header > span {
     white-space: initial;
+    font-size: 0.8em;
 }
 
 #servicios .item > article{
