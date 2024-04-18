@@ -163,6 +163,15 @@ Array.from(mails).forEach(elm => {
 
 //-----------------------------------------------------------------------------
 
+btnEnviar.addEventListener('click', function(evt) {
+  mailsData.forEach(function(input) {
+    input.value = "";
+    input.dispatchEvent(new Event('change'))
+  })
+})
+
+//-----------------------------------------------------------------------------
+
 let palabras = ['Desarrollo web.', 'Soluciones Tecnologicas.', 'Innovación.'],
     letras,
     i = 0,

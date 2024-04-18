@@ -675,6 +675,7 @@ body > header {
     border-bottom: 1px solid #333;
     outline: none;
     resize: none;
+    font-family: "Open Sans", sans-serif;
 }
   
 #contacto .contact-form .input-box span {
@@ -697,8 +698,7 @@ body > header {
     transform: translateY(-1.5em);
 }
   
-#contacto .contact-form .input-box a
-  {
+#contacto .contact-form .input-box a {
     display: block;
     width: 100%;
     background: var(--primary);
