@@ -57,6 +57,8 @@
     position: relative;
     transform-style: preserve-3d;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
 }
 
 #servicios .item:nth-child(2) {
