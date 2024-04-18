@@ -77,7 +77,6 @@ function isScrolledIntoView(elem) {
     var rect = elem.getBoundingClientRect();
     var elemTop = rect.top;
     var elemBottom = rect.bottom;
-    console.log(elemTop, elemBottom, window.innerHeight)
 
     var isVisible = (elemTop >= 0) && (elemBottom <= (window.innerHeight + 200));
     
@@ -101,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
         setTimeout(function() {
           res();
-        }, 5000)
+        }, 3000)
       })
     }))
     .then(function() {
@@ -201,3 +200,18 @@ let typing = function () {
 };
 
 typing();
+
+//-----------------------------------------------------------------------------
+
+document.querySelectorAll('.popup').forEach(function(menu) {
+  const items = menu.querySelectorAll('ul > li');
+  const checkbox = document.querySelector('input#menu');
+
+  items.forEach(function(item) {
+    item.addEventListener('click', function(evt) {
+      if(checkbox.checked) {
+        checkbox.checked = false;
+      }
+    })
+  })
+})
