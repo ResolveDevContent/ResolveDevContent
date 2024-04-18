@@ -105,6 +105,12 @@ section {
 .preloader > em {
     font-size: 1.5em;
     font-weight: bold;
+    animation: preloader 2s ease-in-out infinite;
+}
+
+.preloader > span {
+    margin-top: .25em;
+    font-size: .9em;
 }
 
 /*----------NAVBAR STYLES----------*/
@@ -765,10 +771,6 @@ body > header {
     gap: 1em;
 }
 
-.footer .footer-brand > span {
-    width: 20em;
-}
-
 .footer .footer-links,
 .footer .footer-socials {
     display: flex;
@@ -885,5 +887,17 @@ body > header {
 @keyframes cursor {
     to {
         border-left: 2px solid #38ada900;
+    }
+}
+
+@keyframes preloader {
+    0% {
+        opacity: .2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: .2;
     }
 }

@@ -156,7 +156,7 @@ body {
     width: 3.5em;
     height: 3.5em;
     transition: all .5s;
-    animation: right-arrow 1s ease-in-out infinite;
+    animation: right-arrow 2s ease-in-out infinite;
 }
 
 #servicios > ul {

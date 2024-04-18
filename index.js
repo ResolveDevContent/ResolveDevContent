@@ -87,14 +87,11 @@ function isScrolledIntoView(elem) {
 
 document.addEventListener('DOMContentLoaded', function() {
     const media = Array.from(document.querySelectorAll('img, video'));
-
-    console.log(media)
   
     Promise.all(media.map(function(m) {
       return new Promise(function(res, rej) {
         if(m.tagName == 'IMG') {
           m.addEventListener('load', () => {
-            console.log("carga")
             res();
           });
         }
