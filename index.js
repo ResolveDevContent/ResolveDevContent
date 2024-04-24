@@ -21,7 +21,7 @@ SmoothScroll({
 const btnEnviar   = document.querySelector('[data-btn]'),
       navbar      = document.querySelector('.navbar'),
       form        = document.querySelector('[data-form]'),
-      mailsData   = form.querySelectorAll('input[type="text"],textarea')
+      mailsData   = form.querySelectorAll('input[type="text"],textarea'),
       mails       = document.querySelectorAll('input[type="radio"]'),
       info        = {
           nombre : '',
