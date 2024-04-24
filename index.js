@@ -91,9 +91,7 @@ document.addEventListener('DOMContentLoaded', function() {
     Promise.all(media.map(function(m) {
       return new Promise(function(res, rej) {
         if(m.tagName == 'IMG') {
-          m.addEventListener('load', () => {
-            res();
-          });
+          m.addEventListener('load', res);
         }
         if(m.tagName == 'VIDEO') {
           m.addEventListener('loadeddata', res);
