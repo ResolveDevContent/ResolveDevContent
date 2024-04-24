@@ -211,6 +211,10 @@ body {
     margin-right: -2em;
 }
 
+#servicios .item > .ribbon.responsive::after {
+    opacity: 0;
+}
+
 /*----------SOBRE NOSOTROS---------*/
 
 #sobre-nosotros > article {
