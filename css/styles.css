@@ -339,6 +339,10 @@ body > header {
 #inicio .word {
     color: var(--secondary);
     position: relative;
+    background: -webkit-linear-gradient(#0b716c, #71fff8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
 }
 
 #inicio .word::after {
