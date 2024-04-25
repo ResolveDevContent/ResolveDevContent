@@ -340,6 +340,7 @@ body > header {
     color: var(--secondary);
     position: relative;
     background: -webkit-linear-gradient(#0b716c, #71fff8);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bolder;
