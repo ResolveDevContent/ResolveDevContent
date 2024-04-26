@@ -22,7 +22,7 @@
     content: "";
     width: 1.5em;
     height: 0.125em;
-    background-color: var(--secondary);
+    background-color: black;
     display: block;
     margin: 0 auto;
 }
@@ -45,24 +45,18 @@
     position: relative;
     transform-style: preserve-3d;
 }
-
-#servicios > ul > li:nth-child(2) {
-    transform: scale(1.125);
-}
-
 #servicios .item {
     min-height: 25em;
-
     margin: 2em 0.5em;
     position: relative;
     transform-style: preserve-3d;
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-
+    box-shadow: 5px 8px 10px 3px #07999260;
 }
 
 #servicios .item:nth-child(2) {
     z-index: 4;
+    transform: scale(1.125);
 }
 
 #servicios > ul:hover .item,
@@ -84,6 +78,10 @@
 }
 
 #servicios .item > header {
+    margin-top: 1em;
+}
+
+#servicios .item > header:nth-child(2) {
     margin-top: 2.5em;
 }
 
@@ -106,7 +104,7 @@
 }
 
 #sobre-nosotros > article > div {
-    max-width: 40em;
+    max-width: 50em;
 }
 
 #sobre-nosotros .personas {
@@ -141,10 +139,6 @@
 
 /*---------FOOTER---------*/
 
-.footer > section {
-    grid-template-columns: repeat(3, 1fr);
-}
-
 .footer .footer-brand {
     align-items: start;
     width: 15em;
@@ -152,8 +146,8 @@
 
 .footer .footer-links, 
 .footer .footer-socials {
-    align-items: start;
-    width: 8em;
+    align-items: center;
+    width: 15em;
 }
 
 .footer .footer-brand > span {

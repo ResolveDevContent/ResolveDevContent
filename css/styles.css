@@ -57,7 +57,7 @@ section {
 #sobre-nosotros > article > div > header h3,
 #servicios > header h3,
 #contacto > section > aside > header > h3 {
-    font-size: 1.75em;
+    font-size: 2.75em;
 }
 
 .ribbon {
@@ -187,7 +187,7 @@ body > header {
     align-items: center;
     justify-content: space-between;
     padding: .5em 2em;
-    background-color: white;
+    background-color: var(--primary);
     transition: 1s all;
 
     position: fixed;
@@ -215,13 +215,14 @@ body > header {
 }
 
 .navbar ul li a {
-    color: black;
+    color: white;
     transition: all 0.5s;
     text-align: center;
+    font-weight: bold;
 }
 
 .navbar.top ul li a{
-    color: white;
+    color: var(--primary);
 }
 
 .footer .footer-links ul li a::after{
@@ -237,7 +238,7 @@ body > header {
     content: "";
     width: 1.5em;
     height: 0.125em;
-    background-color: var(--secondary);
+    background-color: black;
     display: block;
 }
 
@@ -251,7 +252,7 @@ body > header {
 
 .navbar .navbar-buttons a{
     padding: 0.5em;
-    background-color: var(--primary);
+    background-color: black;
     color: white;
     border-radius: 1em;
     transition: all 0.5s;
@@ -261,8 +262,12 @@ body > header {
     text-align: center;
 }
 
+.navbar.top .navbar-buttons a {
+    background-color: var(--primary);
+}
+
 .navbar .navbar-buttons a:hover {
-    background-color: var(--secondary);
+    background-color: #313131;
 }
 
 /*----------HOME----------*/
@@ -325,8 +330,7 @@ body > header {
 }
 
 #inicio figcaption article footer a{
-    padding: 0.5em;
-    text-transform: uppercase;
+    padding: 0.5em 1em;
     color: white;
     background-color: var(--primary);
     border-radius: 1em;
@@ -377,17 +381,16 @@ body > header {
     display: flex;
     align-items: stretch;
     margin-bottom: 2em;
-
 }
 
 #servicios .item {
-    background-color: white;
+    background-color: #313131;
     padding: 2em;
     border-radius: 1em;
     min-height: 16em;
-
     display: flex;
     flex-direction: column;
+    color: white;
 }
 
 #servicios .item > div > strong {
@@ -450,6 +453,9 @@ body > header {
     background-color: var(--secondary);
 }
 
+#servicios > footer > a {
+    font-size: 1.25em;
+}
 
 /*----------SOBRE NOSOTROS----------*/
 
@@ -477,7 +483,7 @@ body > header {
 
 #sobre-nosotros > article > div > header h3 {
     font-weight: bolder;
-    margin-top: 0.25em;
+    margin-bottom: 0.25em;
 }
 
 #sobre-nosotros > footer{
@@ -486,10 +492,10 @@ body > header {
     flex-direction: column;
     gap: 2.5em;
 
-    background-color: white;
+    background-color: #313131;
     padding: 2em;
     border-radius: 1em;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    box-shadow: 0px 8px 13px 2px #07999280;
     position: relative;
 }
 
@@ -510,6 +516,7 @@ body > header {
     flex-direction: column;
     align-items: center;
     gap: 1em;
+    color: white;
 }
 
 #sobre-nosotros .personas > li > header {
@@ -528,6 +535,10 @@ body > header {
     flex-direction: column;
     text-align: center;
     gap: 0.5em;
+}
+
+#sobre-nosotros .personas article > strong {
+    font-size: 1.25em;
 }
 
 #sobre-nosotros .personas li footer {
@@ -749,7 +760,7 @@ body > header {
     color: #00bcd4;
   }
 
-#contacto .contact-form .footer {
+#contacto .contact-form .contact-footer {
     display: flex;
     width: 100%;
     align-items: center;
@@ -757,7 +768,7 @@ body > header {
     margin-top: 1em;
 }
 
-#contacto .contact-form .footer > span {
+#contacto .contact-form .contact-footer > span {
     font-size: 0.9em;
     text-align: center;
     color: var(--primary);
@@ -820,7 +831,7 @@ body > header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: #ffffff;
+    background-color: var(--primary);
 }
 
 .footer > section {
@@ -854,6 +865,7 @@ body > header {
 .footer .footer-links > em,
 .footer .footer-socials > em{
     font-weight: bolder;
+    font-size: 1.25em;
 }
 
 .footer .footer-socials ul{
@@ -882,12 +894,14 @@ body > header {
     width: 100%;
     text-align: center;
     padding: 0.5em 0;
-    background-color: black;
+    background-color: var(--primary);
 }
 
 .footer .copyright span {
     width: 100%;
-    color: white;
+    color: black;
+    font-weight: bolder;
+    font-size: .75em;
 }
 
 /*animations*/
