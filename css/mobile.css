@@ -189,16 +189,6 @@ body {
     margin-top: 1em;
 }
 
-#servicios .item > header > strong {
-    white-space: initial;
-    font-size: 1.75em;
-}
-
-#servicios .item > header > span {
-    white-space: initial;
-    font-size: 0.8em;
-}
-
 #servicios .item > article{
     margin-top: .5em;
 }
