@@ -27,6 +27,10 @@
     margin: 0 auto;
 }
 
+.navbar.top ul li a:hover::after {
+    background-color: white;
+}
+
 /*----------HOME----------*/
 
 #inicio figcaption article {

@@ -244,8 +244,10 @@ body > header {
 
 .navbar .navbar-logo a{
     display: flex;
-    height: 4em;
-    width: 11em;
+}
+
+.navbar .navbar-logo a img{
+    width: 6em;
 }
 
 .navbar .navbar-buttons a{
@@ -843,8 +845,8 @@ body > header {
     gap: 1em;
 }
 
-.footer .footer-brand {
-    height: 5em;
+.footer .footer-brand > img {
+    width: 10em;
 }
 
 .footer .footer-links,
@@ -882,7 +884,7 @@ body > header {
 .footer .footer-links ul li a {
     color: black;
     transition: all 0.5s;
-    text-align: start;
+    text-align: center;
 }
 
 .footer .footer-socials img {
