@@ -187,7 +187,7 @@ body > header {
     align-items: center;
     justify-content: space-between;
     padding: .5em 2em;
-    background-color: var(--primary);
+    background-color: white;
     transition: 1s all;
 
     position: fixed;
@@ -215,14 +215,10 @@ body > header {
 }
 
 .navbar ul li a {
-    color: white;
+    color: var(--primary);
     transition: all 0.5s;
     text-align: center;
     font-weight: bold;
-}
-
-.navbar.top ul li a{
-    color: var(--primary);
 }
 
 .footer .footer-links ul li a::after{
@@ -248,11 +244,13 @@ body > header {
 
 .navbar .navbar-logo a{
     display: flex;
+    height: 4em;
+    width: 11em;
 }
 
 .navbar .navbar-buttons a{
     padding: 0.5em;
-    background-color: black;
+    background-color: var(--primary);
     color: white;
     border-radius: 1em;
     transition: all 0.5s;
@@ -260,10 +258,6 @@ body > header {
     width: 7em;
     display: block;
     text-align: center;
-}
-
-.navbar.top .navbar-buttons a {
-    background-color: var(--primary);
 }
 
 .navbar .navbar-buttons a:hover {
@@ -831,7 +825,7 @@ body > header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: var(--primary);
+    background-color: white;
 }
 
 .footer > section {
@@ -847,6 +841,10 @@ body > header {
     display: flex;
     flex-direction: column;
     gap: 1em;
+}
+
+.footer .footer-brand {
+    height: 5em;
 }
 
 .footer .footer-links,
@@ -866,6 +864,7 @@ body > header {
 .footer .footer-socials > em{
     font-weight: bolder;
     font-size: 1.25em;
+    color: var(--primary);
 }
 
 .footer .footer-socials ul{
