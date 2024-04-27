@@ -42,6 +42,10 @@ section {
     z-index: 16;
 }
 
+h3 {
+    font-size: 2.5em;
+}
+
 .disabled {
     pointer-events: none;
     user-select: none;
@@ -50,14 +54,9 @@ section {
 
 #servicios,
 #sobre-nosotros,
-#contacto {
+#contacto,
+#preguntas {
     padding: 2em 2em 0 2em;
-}
-
-#sobre-nosotros > article > div > header h3,
-#servicios > header h3,
-#contacto > section > aside > header > h3 {
-    font-size: 2.5em;
 }
 
 .ribbon {
@@ -477,6 +476,42 @@ body > header {
     display: flex;
 }
 
+#sobre-nosotros > div {
+    width: 100%;
+    padding-bottom: 2em;
+    cursor: default;
+}
+
+#sobre-nosotros > div > ul {
+    display: grid;
+}
+
+#sobre-nosotros .step > div {
+    display: grid;
+}
+
+#sobre-nosotros .step > div > div {
+    grid-area: 1 / 1 / 2 / 2;
+    margin: auto 0 auto 8em;
+    width: 12em;
+}
+
+#sobre-nosotros .step > div > div > p {
+    font-weight: bolder;
+}
+
+#sobre-nosotros .step > div > p {
+    font-size: 11em;
+    font-weight: bolder;
+    opacity: .3;
+    grid-area: 1 / 1 / 2 / 2;
+    color: var(--primary);
+}
+
+#sobre-nosotros .step:nth-child(2) > div > p {
+    color: #313131;
+}
+
 #sobre-nosotros > article > div {
     flex: 1;
     padding: 1em;
@@ -501,7 +536,7 @@ body > header {
     display: flex;
     flex-direction: column;
     gap: 2.5em;
-
+    margin-top: 1em;
     background-color: #313131;
     padding: 2em;
     border-radius: 1em;
@@ -606,6 +641,42 @@ body > header {
 
 #sobre-nosotros .personas li footer a:hover {
     background-color: rgb(172, 172, 172);
+}
+
+/*----------FAQ----------*/
+
+#preguntas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#preguntas > div {
+    border-radius: 1em;
+    background-color: #313131;
+    padding: 2em;
+    width: 100%;
+    margin-top: 1em;
+    box-shadow: 0px 8px 13px 2px #07999280;
+}
+
+#preguntas > div > details {
+    background-color: var(--primary);
+    margin-block: 1em;
+    border-radius: 1em;
+    cursor: pointer;
+}
+
+#preguntas > div > details > summary {
+    font-size: 1.25em;
+    padding: 1em;
+    margin-left: .5em;
+}
+
+#preguntas > div > details > p {
+    padding: 1em;
+    background-color: #0b716c;
+    border-radius: 0 0 1em 1em;
 }
 
 /*----------CONTACTO----------*/
@@ -893,6 +964,7 @@ body > header {
 .footer .footer-socials a{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .footer .footer-links ul li a {

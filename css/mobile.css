@@ -248,6 +248,16 @@ body {
     width: 100%;
 }
 
+#sobre-nosotros > div > ul {
+    grid-template-columns: 1fr;
+}
+
+/*----------FAQ----------*/
+
+#preguntas > header {
+    text-align: center;
+}
+
 /*----------CONTACTO----------*/
 
 #contacto .container-mail {

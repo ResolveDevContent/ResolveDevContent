@@ -118,6 +118,9 @@
     max-width: 15em;
 }
 
+#sobre-nosotros > div > ul {
+    grid-template-columns: repeat(3, 1fr);
+}
 
 /*----------CONTACTO----------*/
 
