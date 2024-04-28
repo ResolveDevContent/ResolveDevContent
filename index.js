@@ -222,3 +222,21 @@ document.querySelectorAll('.popup').forEach(function(menu) {
     })
   })
 })
+
+/*-----------------------------------------------------------------------------*/
+
+const details = document.querySelectorAll("details");
+
+details.forEach((detail) => {
+  detail.addEventListener("toggle", () => {
+    if (detail.open) setTargetDetail(detail);
+  });
+});
+
+function setTargetDetail(targetDetail) {
+  details.forEach((detail) => {
+    if (detail !== targetDetail) {
+      detail.open = false;
+    }
+  });
+}

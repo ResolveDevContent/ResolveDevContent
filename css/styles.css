@@ -671,12 +671,15 @@ body > header {
     font-size: 1.25em;
     padding: 1em;
     margin-left: .5em;
+    color: white;
 }
 
 #preguntas > div > details > p {
     padding: 1em;
     background-color: #0b716c;
     border-radius: 0 0 1em 1em;
+    color: white;
+
 }
 
 /*----------CONTACTO----------*/

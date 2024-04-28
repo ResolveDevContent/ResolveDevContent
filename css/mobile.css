@@ -40,6 +40,10 @@ body {
     display: none;
 }
 
+.navbar .navbar-responsive > label {
+    font-size: 1.5em;
+}
+
 .navbar .navbar-responsive input:checked + article {
     display: flex;
 
@@ -158,12 +162,12 @@ body {
     width: 3.5em;
     height: 3.5em;
     transition: all .5s;
-    animation: right-arrow 2s ease-in-out infinite;
+    animation: right-arrow 1s ease-in-out infinite alternate;
 }
 
 #servicios > ul {
     overflow-x: auto;
-    white-space: nowrap;
+    /* white-space: nowrap; */
     gap: 2em;
     width: 100%;
     justify-content: space-evenly;
@@ -364,7 +368,7 @@ body {
     }
     100% {
         transform: translateX(0px);
-        opacity: .7;
+        opacity: .5;
     }
 }
 
@@ -410,6 +414,6 @@ body {
     }
 
     #inicio figcaption article footer a {
-        font-size: .875em;
+        font-size: 1em;
     }
 }
