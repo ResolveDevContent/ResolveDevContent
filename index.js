@@ -240,3 +240,15 @@ function setTargetDetail(targetDetail) {
     }
   });
 }
+
+/*-----------------------------------------------------------------------------*/
+
+const cards = document.querySelectorAll("[data-card]");
+
+cards.forEach((card) => {
+  card.addEventListener("click", () => {
+    const number = card.dataset.card;
+  
+    console.log(number)
+  })
+})
