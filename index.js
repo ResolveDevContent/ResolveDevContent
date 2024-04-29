@@ -157,7 +157,7 @@ Array.from(mailsData).forEach(elm => {
 btnCard.forEach((btn) => {
   btn.addEventListener('click', () => {
     let list = `<li>
-                  <span>Incluye: </span>
+                  <span>${btn.dataset.card}</span>
                   <label for="modal">
                     <i class="icon close"></i>
                   </label>

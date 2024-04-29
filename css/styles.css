@@ -475,6 +475,8 @@ body > header {
     display: flex;
     flex-direction: column;
     gap: 0.5em;
+    overflow: auto;
+    max-height: 90%;
 } 
 
 #servicios .modal > ul > li {
@@ -485,6 +487,14 @@ body > header {
 
 #servicios .modal > ul > li:first-child {
     justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+#servicios .modal > ul > li:first-child span {
+    font-size: 1.5em;
+    color: var(--primary); 
+    font-weight: bolder; 
+    text-transform: capitalize;
 }
 
 #servicios .modal > ul > li:first-child i {
