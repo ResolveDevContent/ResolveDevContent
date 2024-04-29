@@ -18,17 +18,28 @@ SmoothScroll({
 
 //-----------------------------------------------------------------------------
 
-const btnEnviar   = document.querySelector('[data-btn]'),
-      navbar      = document.querySelector('.navbar'),
-      form        = document.querySelector('[data-form]'),
-      mailsData   = form.querySelectorAll('input[type="text"],textarea'),
-      mails       = document.querySelectorAll('input[type="radio"]'),
-      info        = {
+const btnEnviar = document.querySelector('[data-btn]'),
+      btnCard   = document.querySelector('[data-card]'),
+      popupList = document.querySelector('[data-list]'),
+      navbar    = document.querySelector('.navbar'),
+      form      = document.querySelector('[data-form]'),
+      mailsData = form.querySelectorAll('input[type="text"],textarea'),
+      mails     = document.querySelectorAll('input[type="radio"]'),
+      info      = {
           nombre : '',
           asunto : '',
           mensaje: '',
           mail   : document.querySelector('input[name="mail"]:checked').value 
         };
+
+//-------------------------------------
+
+const POPUPS = {
+  basico: ['Landing Page', 'Plantilla prediseñada'],
+  intermedio: ['Página a elección', 'Diseño personalizado', 'Funcionalidades'],
+  personalizado: ['Desarrollo a medida', 'Funcionalidades avanzadas'],
+  compartido: ['Fotos, textos, colores a elección', 'Diseño web adaptable', 'Vinculación con WhatsApp', 'Links a redes sociales', 'Posicionamiento CEO', 'Formulario de contacto', 'Configuración de Hosting y Dominio', 'Servicio de mantenimiento', 'Soporte GRATIS por 30 días']
+}
 
 //-----------------------------------------------------------------------------
 
@@ -140,6 +151,24 @@ Array.from(mailsData).forEach(elm => {
         }
     })
 })
+
+//-------------------------------------
+
+btnCard.addEventListener('click', () => {
+  let list = '';
+
+  POPUPS[btnCard.dataset.card].forEach(item => {
+    list += `<i class="icon check"></i>
+             <li>${item}</li>`;
+  });
+   
+  POPUPS['compartido'].forEach(item => {
+    list += `<i class="icon check"></i>
+             <li>${item}</li>`;
+  });
+
+  popupList.innerHTML = list;
+});
 
 //-------------------------------------
 
