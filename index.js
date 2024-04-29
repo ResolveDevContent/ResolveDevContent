@@ -155,18 +155,26 @@ Array.from(mailsData).forEach(elm => {
 //-------------------------------------
 
 btnCard.addEventListener('click', () => {
-  let list = '';
-
+  let list = `<li>
+                <i class="icon close"></i>
+              </li>`;
+  console.log(popupList, list)
+  
   POPUPS[btnCard.dataset.card].forEach(item => {
-    list += `<i class="icon check"></i>
-             <li>${item}</li>`;
+    list += `<li>
+                <i class="icon check"></i>
+                <span>${item}</span>
+             </li>`;
   });
    
   POPUPS['compartido'].forEach(item => {
-    list += `<i class="icon check"></i>
-             <li>${item}</li>`;
+    list += `<li>
+                <i class="icon check"></i>
+                <span>${item}</span>
+            </li>`;
   });
 
+  console.log(popupList, list)
   popupList.innerHTML = list;
 });
 
@@ -269,15 +277,3 @@ function setTargetDetail(targetDetail) {
     }
   });
 }
-
-/*-----------------------------------------------------------------------------*/
-
-const cards = document.querySelectorAll("[data-card]");
-
-cards.forEach((card) => {
-  card.addEventListener("click", () => {
-    const number = card.dataset.card;
-  
-    console.log(number)
-  })
-})
