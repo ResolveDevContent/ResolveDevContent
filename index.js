@@ -38,7 +38,7 @@ const POPUPS = {
   basico: ['Landing Page', 'Plantilla prediseñada'],
   intermedio: ['Página a elección', 'Diseño personalizado', 'Funcionalidades'],
   personalizado: ['Desarrollo a medida', 'Funcionalidades avanzadas'],
-  compartido: ['Fotos, textos, colores a elección', 'Diseño web adaptable', 'Vinculación con WhatsApp', 'Links a redes sociales', 'Posicionamiento CEO', 'Formulario de contacto', 'Configuración de Hosting y Dominio', 'Servicio de mantenimiento', 'Soporte GRATIS por 30 días']
+  compartido: ['Fotos, textos, colores a elección', 'Diseño web adaptable', 'Vinculación con WhatsApp', 'Links a redes sociales', 'Posicionamiento SEO', 'Formulario de contacto', 'Configuración de Hosting y Dominio', 'Servicio de mantenimiento', 'Soporte GRATIS por 30 días']
 }
 
 //-----------------------------------------------------------------------------
@@ -157,6 +157,7 @@ Array.from(mailsData).forEach(elm => {
 btnCard.forEach((btn) => {
   btn.addEventListener('click', () => {
     let list = `<li>
+                  <span>Incluye: </span>
                   <label for="modal">
                     <i class="icon close"></i>
                   </label>

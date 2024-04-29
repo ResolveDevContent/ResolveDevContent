@@ -507,7 +507,7 @@ body > header {
 } 
 
 #servicios .modal > ul > li:first-child {
-    justify-content: end;
+    justify-content: space-between;
 }
 
 #servicios .modal > ul > li:first-child i {

@@ -173,10 +173,11 @@ body {
 }
 
 #servicios > div > i {
-    width: 3.5em;
-    height: 3.5em;
+    width: 4em;
+    height: 4em;
     transition: all .5s;
     animation: right-arrow 1s ease-in-out infinite alternate;
+    background-color: var(--secondary);
 }
 
 #servicios > ul {
