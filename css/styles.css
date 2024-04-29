@@ -536,8 +536,6 @@ body > header {
 
 #sobre-nosotros .step > div > div {
     grid-area: 1 / 1 / 2 / 2;
-    margin: auto 0 auto 8em;
-    width: 12em;
 }
 
 #sobre-nosotros .step > div > div > p {
@@ -740,7 +738,7 @@ body > header {
     background-position: center;
     position: relative;
     margin-top: 2em;
-    padding: 2em 6em 2em 6em;
+    padding: 4em 6em 4em 6em;
 }
   
 #contacto  .contacto-container {
