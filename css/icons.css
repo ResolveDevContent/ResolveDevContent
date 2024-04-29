@@ -66,3 +66,8 @@
     mask-image: url('../icons/coffee.svg');
     -webkit-mask-image: url('../icons/coffee.svg');
 }
+
+.icon.message {
+    mask-image: url('../icons/message.svg');
+    -webkit-mask-image: url('../icons/message.svg');
+}
