@@ -192,6 +192,7 @@ body {
     width: 100%;
     scroll-snap-align: center;
     flex: none;
+    max-width: none;
 }
 
 #servicios .item > div {
@@ -393,6 +394,15 @@ body {
 /*--------------------*/
 
 @media screen and (min-width:600px) and (max-width:960px) {
+    .navbar .navbar-logo a img {
+        width: 4em;
+    }
+
+    .navbar .navbar-responsive .icon {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
     #inicio figcaption article {
         margin-inline: 3em;
     }
@@ -403,6 +413,10 @@ body {
 
     #inicio .home-text div {
         font-size: 1.25em;
+    }
+
+    #inicio .home-text > img {
+        width: 40%;
     }
 
     #inicio .home-text p {
@@ -423,12 +437,17 @@ body {
         font-size: 2em;
     }
 
-    #inicio .home-text span {
-        font-size: 1.75em;
+    #inicio .home-text div {
+        font-size: 2.5em;
+        height: 2.5em;
     }
 
     #inicio .home-text p {
         font-size: .9em;
+    }
+
+    #inicio .home-text > img {
+        width: 60%;
     }
 
     #inicio figcaption article footer a {

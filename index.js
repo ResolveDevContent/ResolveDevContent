@@ -19,7 +19,7 @@ SmoothScroll({
 //-----------------------------------------------------------------------------
 
 const btnEnviar = document.querySelector('[data-btn]'),
-      btnCard   = document.querySelector('[data-card]'),
+      btnCard   = document.querySelectorAll('[data-card]'),
       popupList = document.querySelector('[data-list]'),
       navbar    = document.querySelector('.navbar'),
       form      = document.querySelector('[data-form]'),
@@ -154,29 +154,27 @@ Array.from(mailsData).forEach(elm => {
 
 //-------------------------------------
 
-btnCard.addEventListener('click', () => {
-  let list = `<li>
-                <i class="icon close"></i>
-              </li>`;
-  console.log(popupList, list)
+btnCard.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    let list = `<li>
+                  <label for="modal">
+                    <i class="icon close"></i>
+                  </label>
+                </li>`;
   
-  POPUPS[btnCard.dataset.card].forEach(item => {
-    list += `<li>
-                <i class="icon check"></i>
-                <span>${item}</span>
-             </li>`;
+    const listItems = POPUPS[btn.dataset.card].concat(POPUPS['compartido']);
+    
+    listItems.forEach(item => {
+      list += `<li>
+                  <i class="icon check"></i>
+                  <span>${item}</span>
+               </li>`;
+    });
+  
+    popupList.innerHTML = list;
   });
-   
-  POPUPS['compartido'].forEach(item => {
-    list += `<li>
-                <i class="icon check"></i>
-                <span>${item}</span>
-            </li>`;
-  });
-
-  console.log(popupList, list)
-  popupList.innerHTML = list;
-});
+})
+  
 
 //-------------------------------------
 

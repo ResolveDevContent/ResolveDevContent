@@ -51,12 +51,12 @@ h3 {
     opacity: .2;
 }
 
-#servicios,
+/* #servicios,
 #sobre-nosotros,
 #contacto,
 #preguntas {
     z-index: 8;
-}
+} */
 
 .ribbon {
     text-align: center;
@@ -476,6 +476,7 @@ body > header {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    z-index: 64;
 }
 
 #servicios input {
@@ -491,7 +492,7 @@ body > header {
     background-color: #313131;
     border-radius: 0.5em;
     color: white;
-    z-index: 32;
+    z-index: 64;
     position: relative;
     animation: popup 1s ease-in-out ;
     display: flex;
