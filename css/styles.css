@@ -127,11 +127,9 @@ h3 {
     -webkit-animation-fill-mode: forwards;
 }
 
-.preloader > em {
-    font-size: 1.5em;
-    font-weight: bold;
+.preloader > img {
+    width: 15em;
     animation: preloader 2s ease-in-out infinite;
-    color: black;
 }
 
 .preloader > div {
@@ -139,35 +137,14 @@ h3 {
     align-items: center;
 }
 
-
 .preloader > div > i {
-    background-color: black;
+    background-color: white;
     margin-left: .25em;
 }
 
 .preloader > div > span {
     margin-top: .25em;
-    color: black;
-}
-
-.loader {
-    width: fit-content;
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-family: monospace;
-    font-size: 30px;
-    overflow: hidden;
-    color: #0000;
-    text-shadow: 0 0 0 #000,10ch 0 0 #000;
-    background: linear-gradient(#000 0 0) bottom left/0% 3px no-repeat;
-    animation: l14 1.5s infinite;
-}
-.loader:before {
-    content: "Loading...";
-}
-@keyframes l14 {
-      80%  {text-shadow:    0  0 0 #000,10ch 0 0 #000;background-size:100% 3px}
-      100% {text-shadow: -10ch 0 0 #000,0    0 0 #000}
+    color: white;
 }
 
 /*----------NAVBAR STYLES----------*/
