@@ -55,7 +55,6 @@ h3 {
 #sobre-nosotros,
 #contacto,
 #preguntas {
-    padding: 2em 2em 0 2em;
     z-index: 8;
 }
 
@@ -185,7 +184,6 @@ body > header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: .5em 2em;
     background-color: white;
     transition: 1s all;
 
@@ -308,10 +306,9 @@ body > header {
     cursor: default;
 }
 
-#inicio .home-text span {
+#inicio .home-text div {
     font-weight: bold;
     font-size: 3.5em;
-    height: 2.75em;
     line-height: 1.25em;
 }
 
@@ -698,6 +695,10 @@ body > header {
     align-items: center;
 }
 
+#preguntas header {
+    text-align: center;
+}
+
 #preguntas > div {
     border-radius: 1em;
     background-color: #313131;
@@ -726,7 +727,6 @@ body > header {
     background-color: #0b716c;
     border-radius: 0 0 1em 1em;
     color: white;
-
 }
 
 /*----------CONTACTO----------*/
@@ -740,8 +740,7 @@ body > header {
     background-position: center;
     position: relative;
     margin-top: 2em;
-    padding-bottom: 4em;
-    padding-top: 4em;
+    padding: 2em 6em 2em 6em;
 }
   
 #contacto  .contacto-container {

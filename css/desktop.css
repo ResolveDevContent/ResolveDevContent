@@ -1,4 +1,15 @@
+
+#servicios,
+#sobre-nosotros,
+#preguntas {
+    padding: 2em 6em 0 6em;
+}
+
 /*----------NAVBAR----------*/
+
+.navbar {
+    padding: .5em 6em;
+}
 
 .navbar .navbar-logo {
     width: 9em;
@@ -35,6 +46,10 @@
 
 #inicio figcaption article {
     max-width: 80%;
+}
+
+#inicio .home-text > img {
+    width: 50%;
 }
 
 /*----------SERVICIOS----------*/

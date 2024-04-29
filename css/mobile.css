@@ -3,7 +3,17 @@ body {
     font-size: 3.5vw;
 }
 
+#servicios,
+#sobre-nosotros,
+#preguntas {
+    padding: 2em 2em 0 2em;
+}
+
 /*----------NAVBAR----------*/
+
+.navbar {
+    padding: .5em 2em;
+}
 
 .navbar .navbar-logo {
     width: 10em;
@@ -148,6 +158,10 @@ body {
     margin-inline: 1em;
 }
 
+#inicio .home-text > img {
+    width: 85%;
+}
+
 /*----------SERVICIOS----------*/
 
 #servicios > div {
@@ -274,8 +288,7 @@ body {
 }
 
 #contacto {
-    padding-top: 3em;
-    padding-bottom: 3em;
+    padding: 2em;
 }
 
 #contacto .row {
@@ -383,7 +396,7 @@ body {
         font-size: 1.325em;
     }
 
-    #inicio .home-text span {
+    #inicio .home-text div {
         font-size: 1.25em;
     }
 
