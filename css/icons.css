@@ -71,3 +71,8 @@
     mask-image: url('../icons/message.svg');
     -webkit-mask-image: url('../icons/message.svg');
 }
+
+.icon.github {
+    mask-image: url('../icons/github.svg');
+    -webkit-mask-image: url('../icons/github.svg');
+}

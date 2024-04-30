@@ -666,7 +666,6 @@ body > header {
     justify-content: center;
 }
 
-#sobre-nosotros .personas li footer a > img,
 #sobre-nosotros .personas li footer a > i {
     width: 1.25em;
     height: 1.25em;
@@ -688,8 +687,7 @@ body > header {
     background-color: rgb(255, 82, 82);
 }
 
-#sobre-nosotros .personas li footer ul li:nth-child(2) a i,
-#sobre-nosotros .personas li footer ul li:nth-child(3) a i {
+#sobre-nosotros .personas li footer ul li a i {
     background-color: white;
 }
 
