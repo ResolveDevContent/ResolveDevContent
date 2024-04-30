@@ -35,7 +35,7 @@ const btnEnviar = document.querySelector('[data-btn]'),
 //-------------------------------------
 
 const POPUPS = {
-  basico: ['Landing Page', 'Plantilla prediseñada'],
+  basico: ['Landing Page', 'Diseño personalizado'],
   intermedio: ['Página a elección', 'Diseño personalizado', 'Funcionalidades'],
   personalizado: ['Desarrollo a medida', 'Funcionalidades avanzadas'],
   compartido: ['Fotos, textos, colores a elección', 'Diseño web adaptable', 'Vinculación con WhatsApp', 'Links a redes sociales', 'Posicionamiento SEO', 'Formulario de contacto', 'Configuración de Hosting y Dominio', 'Servicio de mantenimiento', 'Soporte GRATIS por 30 días']
