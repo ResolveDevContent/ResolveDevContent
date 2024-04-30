@@ -22,6 +22,7 @@ const btnEnviar = document.querySelector('[data-btn]'),
       btnCard   = document.querySelectorAll('[data-card]'),
       popupList = document.querySelector('[data-list]'),
       navbar    = document.querySelector('.navbar'),
+      details   = document.querySelectorAll("details"),
       form      = document.querySelector('[data-form]'),
       mailsData = form.querySelectorAll('input[type="text"],textarea'),
       mails     = document.querySelectorAll('input[type="radio"]'),
@@ -55,7 +56,7 @@ const debounce = callback => {
 
 //-------------------------------------
 
-const createMail = event => {
+function createMail(event) {
     info[event.target.name] = event.target.value;
 
     const invalids = form.querySelectorAll('input:required:invalid,textarea:required:invalid');
@@ -92,6 +93,16 @@ function isScrolledIntoView(elem) {
     var isVisible = (elemTop >= 0) && (elemBottom <= (window.innerHeight + 400));
     
     return isVisible;
+}
+
+//-------------------------------------
+
+function setTargetDetail(targetDetail) {
+  details.forEach((detail) => {
+    if (detail !== targetDetail) {
+      detail.open = false;
+    }
+  });
 }
 
 //-----------------------------------------------------------------------------
@@ -195,7 +206,7 @@ Array.from(mails).forEach(elm => {
     });
 });
 
-//-----------------------------------------------------------------------------
+//-------------------------------------
 
 btnEnviar.addEventListener('click', function(evt) {
   mailsData.forEach(function(input) {
@@ -203,6 +214,27 @@ btnEnviar.addEventListener('click', function(evt) {
     input.dispatchEvent(new Event('change'))
   })
 })
+
+document.querySelectorAll('.popup').forEach(function(menu) {
+  const items = menu.querySelectorAll('ul > li > a');
+  const checkbox = document.querySelector('input#menu');
+
+  items.forEach(function(item) {
+    item.addEventListener('click', function(evt) {
+      if(checkbox.checked) {
+        checkbox.checked = false;
+      }
+    })
+  })
+})
+
+//-----------------------------------------------------------------------------
+
+details.forEach((detail) => {
+  detail.addEventListener("toggle", () => {
+    if (detail.open) setTargetDetail(detail);
+  });
+});
 
 //-----------------------------------------------------------------------------
 
@@ -245,34 +277,3 @@ let typing = function () {
 typing();
 
 //-----------------------------------------------------------------------------
-
-document.querySelectorAll('.popup').forEach(function(menu) {
-  const items = menu.querySelectorAll('ul > li > a');
-  const checkbox = document.querySelector('input#menu');
-
-  items.forEach(function(item) {
-    item.addEventListener('click', function(evt) {
-      if(checkbox.checked) {
-        checkbox.checked = false;
-      }
-    })
-  })
-})
-
-/*-----------------------------------------------------------------------------*/
-
-const details = document.querySelectorAll("details");
-
-details.forEach((detail) => {
-  detail.addEventListener("toggle", () => {
-    if (detail.open) setTargetDetail(detail);
-  });
-});
-
-function setTargetDetail(targetDetail) {
-  details.forEach((detail) => {
-    if (detail !== targetDetail) {
-      detail.open = false;
-    }
-  });
-}
