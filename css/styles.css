@@ -297,6 +297,7 @@ body > header {
     font-size: 1.125em;
     max-width: 40em;
     font-weight: bold;
+    padding: 0 2em;
 }
 
 #inicio figcaption article footer a{
