@@ -6,7 +6,7 @@ body {
 #servicios,
 #sobre-nosotros,
 #preguntas {
-    padding: 4em 2em 0 2em;
+    padding: 5em 2em 0 2em;
 }
 
 /*----------NAVBAR----------*/
@@ -303,7 +303,7 @@ body {
 }
 
 #contacto {
-    padding: 4em 2em;
+    padding: 5em 2em;
 }
 
 #contacto .row {
