@@ -45,24 +45,6 @@ h3 {
     font-size: 2.5em;
 }
 
-::-webkit-scrollbar-track
-{
-	border-radius: 0.5em;
-	background-color: #313131;
-}
-
-::-webkit-scrollbar
-{
-	width: 0.5em;
-	background-color: #313131;
-}
-
-::-webkit-scrollbar-thumb
-{
-	border-radius: 0.5em;
-	background-color: var(--primary);
-}
-
 .disabled {
     pointer-events: none;
     user-select: none;

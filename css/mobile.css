@@ -170,6 +170,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: end;
+    flex-direction: column;
 }
 
 #servicios > div > i {
@@ -178,6 +179,13 @@ body {
     transition: all .5s;
     animation: right-arrow 1s ease-in-out infinite alternate;
     background-color: var(--secondary);
+}
+
+#servicios > div > span {
+    color: var(--secondary);
+    font-weight: bold;
+    animation: right-arrow 1s ease-in-out infinite alternate;
+    margin-top: -0.5em;
 }
 
 #servicios > ul {
