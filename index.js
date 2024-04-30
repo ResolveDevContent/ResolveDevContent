@@ -206,7 +206,7 @@ btnEnviar.addEventListener('click', function(evt) {
 
 //-----------------------------------------------------------------------------
 
-let palabras = ['Desarrollo web.', 'Soluciones Tecnologicas.', 'Innovación.'],
+let palabras = ['Desarrollo web.', 'Soluciones Tecnológicas.', 'Innovación.'],
     letras,
     i = 0,
     substring = 0,
