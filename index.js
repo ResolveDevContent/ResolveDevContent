@@ -24,7 +24,6 @@ const btnEnviar = document.querySelector('[data-btn]'),
       navbar    = document.querySelector('.navbar'),
       details   = document.querySelectorAll("details"),
       form      = document.querySelector('[data-form]'),
-      mailsData = form.querySelectorAll('input[type="text"],textarea'),
       mails     = document.querySelectorAll('input[type="radio"]'),
       info      = {
           nombre : '',
@@ -153,15 +152,19 @@ window.addEventListener('scroll', () => {
 
 //-------------------------------------
 
-Array.from(mailsData).forEach(elm => {
-    elm.addEventListener('input', debounce(createMail));
+if(form) {
+  const mailsData = form.querySelectorAll('input[type="text"],textarea');
 
-    elm.addEventListener('change', function(evt) {
-        if(elm.value || !elm.value) {
-            elm.classList.toggle('input-active');
-        }
-    })
-})
+  Array.from(mailsData).forEach(elm => {
+      elm.addEventListener('input', debounce(createMail));
+  
+      elm.addEventListener('change', function(evt) {
+          if(elm.value || !elm.value) {
+              elm.classList.toggle('input-active');
+          }
+      })
+  })
+}
 
 //-------------------------------------
 
@@ -209,10 +212,14 @@ Array.from(mails).forEach(elm => {
 //-------------------------------------
 
 btnEnviar.addEventListener('click', function(evt) {
-  mailsData.forEach(function(input) {
-    input.value = "";
-    input.dispatchEvent(new Event('change'))
-  })
+  if(form) {
+    const mailsData = form.querySelectorAll('input[type="text"],textarea');
+
+    mailsData.forEach(function(input) {
+      input.value = "";
+      input.dispatchEvent(new Event('change'))
+    })
+  }
 })
 
 document.querySelectorAll('.popup').forEach(function(menu) {
