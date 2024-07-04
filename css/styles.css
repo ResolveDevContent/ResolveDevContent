@@ -1021,6 +1021,85 @@ body > header {
     font-size: .75em;
 }
 
+/*----------PORTAFOLIO----------*/
+
+#portafolio {
+    position: relative;
+    margin-top: 8em;
+}
+
+#portafolio > header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#portafolio > header > h1 {
+    font-size: 2.5em;
+}
+
+#portafolio .list-portafolio {
+    display: flex;
+    flex-direction: column;
+    background-color: #313131;
+    color: #fff;
+    margin-top: 2em;
+}
+
+#portafolio .list-portafolio > li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+    height: 100vh;
+
+    position: relative;
+    overflow: hidden;
+}
+
+#portafolio .list-portafolio > li > aside {
+    margin-left: 3em;
+    width: 28%;
+}
+
+#portafolio .list-portafolio > li > aside {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#portafolio .list-portafolio > li > article {
+    flex: 1;
+    transform: translateX(5em);
+    transition: all 0.5s;
+}
+
+#portafolio .list-portafolio > li > article:hover {
+    transform: translateX(-1em) scale(1.05);
+}
+
+#portafolio .list-portafolio > li > article img {
+    border-radius: 2em 0em 0 2em;
+    box-shadow: 0px 8px 13px 2px #07999214;
+}
+
+#portafolio .list-portafolio > li > article > a {
+    display: flex;
+}
+
+#portafolio .list-portafolio > li > aside > a {
+    padding: 0.5em;
+    background-color: var(--primary);
+    color: white;
+    border-radius: 1em;
+    transition: all 0.5s;
+    width: 7em;
+    display: block;
+    text-align: center;
+}
+
+
 /*animations*/
 
 .start-animation svg {

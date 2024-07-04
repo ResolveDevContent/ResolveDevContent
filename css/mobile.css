@@ -378,6 +378,37 @@ body {
     width: 3.5em;
 }
 
+/* PORTAFOLIO ------------*/
+
+#portafolio .list-portafolio > li {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3em;
+
+    height: 100%;
+}
+
+#portafolio .list-portafolio > li > article {
+    transform: translateX(0em);
+}
+
+#portafolio .list-portafolio > li > article:hover {
+    transform: translateX(0em) scale(1.1);
+}
+
+#portafolio .list-portafolio > li > article img {
+    border-radius: 1em;
+}
+
+#portafolio .list-portafolio > li > aside {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: unset;
+}
+
 /*--------------------*/
 
 .start-animation.inView svg {
