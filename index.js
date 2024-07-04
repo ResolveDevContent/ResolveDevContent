@@ -24,13 +24,18 @@ const btnEnviar = document.querySelector('[data-btn]'),
       navbar    = document.querySelector('.navbar'),
       details   = document.querySelectorAll("details"),
       form      = document.querySelector('[data-form]'),
-      mails     = document.querySelectorAll('input[type="radio"]'),
-      info      = {
-          nombre : '',
-          asunto : '',
-          mensaje: '',
-          mail   : document.querySelector('input[name="mail"]:checked').value 
-        };
+      mails     = document.querySelectorAll('input[type="radio"]');
+
+
+const info = {
+  nombre : '',
+  asunto : '',
+  mensaje: ''
+};
+
+if(document.querySelector('input[name="mail"]:checked')) {
+  info.mail = document.querySelector('input[name="mail"]:checked').value 
+}
 
 //-------------------------------------
 
@@ -210,17 +215,18 @@ Array.from(mails).forEach(elm => {
 });
 
 //-------------------------------------
-
-btnEnviar.addEventListener('click', function(evt) {
-  if(form) {
-    const mailsData = form.querySelectorAll('input[type="text"],textarea');
-
-    mailsData.forEach(function(input) {
-      input.value = "";
-      input.dispatchEvent(new Event('change'))
-    })
-  }
-})
+if(btnEnviar) {
+  btnEnviar.addEventListener('click', function(evt) {
+    if(form) {
+      const mailsData = form.querySelectorAll('input[type="text"],textarea');
+  
+      mailsData.forEach(function(input) {
+        input.value = "";
+        input.dispatchEvent(new Event('change'))
+      })
+    }
+  })
+}
 
 document.querySelectorAll('.popup').forEach(function(menu) {
   const items = menu.querySelectorAll('ul > li > a');
@@ -277,7 +283,9 @@ let typing = function () {
       else substring--;
     }
 
-    document.querySelector(".word").innerText = letras;
+    if(document.querySelector(".word")) {
+      document.querySelector(".word").innerText = letras;
+    }
   },speed);
 };
 
