@@ -386,7 +386,7 @@ body {
     justify-content: center;
     padding: 3em;
 
-    height: 100%;
+    height: 80vh;
 }
 
 #portafolio .list-portafolio > li > article {
@@ -399,6 +399,11 @@ body {
 
 #portafolio .list-portafolio > li > article img {
     border-radius: 1em;
+}
+
+#portafolio .list-portafolio > li > article > a {
+    width: 100%;
+    height: 100%;
 }
 
 #portafolio .list-portafolio > li > aside {
