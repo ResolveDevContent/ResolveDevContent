@@ -1100,6 +1100,17 @@ body > header {
 }
 
 
+#portafolio .list-portafolio > li > aside > header > em {
+    font-size: 1.125em;
+    font-weight: 600;
+    font-style: normal;
+    color: var(--secondary);
+}
+
+#portafolio .list-portafolio > li > aside > header > p {
+    margin-top: 0.5em;
+}
+
 /*animations*/
 
 .start-animation svg {
