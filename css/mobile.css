@@ -414,6 +414,11 @@ body {
     margin-left: unset;
 }
 
+#portafolio .list-portafolio > li > aside > header > p {
+    text-align: start;
+    margin-top: 2em;
+}
+
 /*--------------------*/
 
 .start-animation.inView svg {
