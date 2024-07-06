@@ -194,6 +194,12 @@
     font-size: .875em;
 }
 
+/*-PORTAFOLIO--------------*/
+
+#portafolio .list-portafolio > li > article .desktop {
+    display: flex;
+}
+
 /*--------------------*/
 
 .start-animation.inView svg {

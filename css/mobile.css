@@ -386,7 +386,7 @@ body {
     justify-content: center;
     padding: 3em;
 
-    height: 80vh;
+    min-height: 80vh;
 }
 
 #portafolio .list-portafolio > li > article {
@@ -421,6 +421,10 @@ body {
 
 #portafolio .list-portafolio > li > aside > header {
     text-align: start;
+}
+
+#portafolio .list-portafolio > li > article .mobile {
+    display: flex;
 }
 
 /*--------------------*/

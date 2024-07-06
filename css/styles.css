@@ -1111,6 +1111,11 @@ body > header {
     margin-top: 0.5em;
 }
 
+#portafolio .list-portafolio > li > article .desktop,
+#portafolio .list-portafolio > li > article .mobile {
+    display: none;
+}
+
 /*animations*/
 
 .start-animation svg {
