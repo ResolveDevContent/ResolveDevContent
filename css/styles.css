@@ -326,7 +326,8 @@ body > header {
 
 #reviews {
     background-color: #313131;
-    padding: 1em;
+    padding: 2em 1em;
+    margin: 4em 0
 }
 #reviews header em {
     font-size: 2.5em;
@@ -347,6 +348,10 @@ body > header {
     scroll-snap-type: x mandatory;
 }
 #reviews ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
     width: 40em;
     min-width: 40em;
     min-height: 20em;
@@ -355,9 +360,18 @@ body > header {
     border-radius: .5em;
     scroll-snap-align: center;
 }
-#reviews ul li em {}
-#reviews ul li span {}
-#reviews ul li p {}
+#reviews ul li em {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+#reviews ul li span {
+    font-size: 1.325em;
+    color: #c1c1c1;
+    font-weight: 600;
+}
+#reviews ul li p {
+    font-size: 1.25em;
+}
 
 /*----------SERVICIOS----------*/
 
