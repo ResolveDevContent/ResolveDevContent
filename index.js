@@ -46,6 +46,65 @@ const POPUPS = {
   compartido: ['Fotos, textos, colores a elección', 'Diseño web adaptable', 'Vinculación con WhatsApp', 'Links a redes sociales', 'Posicionamiento SEO', 'Formulario de contacto', 'Configuración de Hosting y Dominio', 'Certificado SSL', 'Servicio de mantenimiento', 'Soporte GRATIS por 30 días']
 }
 
+// SCROLL ----------------------------------------------------------------------
+
+document.querySelectorAll('[data-scroll]').forEach(function(root) {
+  const scrollable = root.querySelectorAll('[data-scrollable]');
+  
+  root
+      .querySelectorAll('[data-arrow]')
+      .forEach(function (arrow) {
+          arrow.addEventListener('click', function (evt) {
+              evt.preventDefault();
+  
+              const direction = Number(arrow.dataset.arrow);
+              scrollable.forEach(function (_scrollable) {
+                  const _child = _scrollable.querySelector(':first-child');
+                  if (!_child) { return; }
+  
+                  _scrollable.scrollLeft += _child.clientWidth * direction;
+              });
+          });
+      });
+
+  if (root.dataset.scroll == 'auto') {
+      let AUTO_DELAY = 5000;
+
+      if(root.dataset.delay) {
+          AUTO_DELAY = root.dataset.delay;
+      }
+  
+      var scroll_in_reverse = false;
+  
+      setInterval(function () {
+          scrollable.forEach(function (_scrollable) {
+              const _child = _scrollable.querySelector(':first-child');
+              if (!_child) { return; }
+
+              _scrollable.scrollLeft += _child.clientWidth * direction;
+
+              var direction = 1;
+
+              if (_scrollable.scrollWidth - _scrollable.scrollLeft - _scrollable.clientWidth < 1) {
+                  scroll_in_reverse = true;
+              }
+
+              if (_scrollable.scrollLeft == 0) {
+                  direction = 1;
+                  scroll_in_reverse = false;
+              }
+
+              if (scroll_in_reverse) {
+                  direction = direction * -1;
+              }
+
+              _scrollable.scrollLeft += _child.clientWidth * direction;
+          });
+
+      }, AUTO_DELAY);
+  }
+})
+
 //-----------------------------------------------------------------------------
 
 const debounce = callback => {
