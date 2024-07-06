@@ -324,12 +324,43 @@ body > header {
 
 /*----------REVIEWS----------*/
 
-#reviews 
+#reviews {
+    background-color: #313131;
+}
+#reviews header em {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+#reviews header span {}
+#reviews ul {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 100%;
+    margin-top: 2em;
+    overflow-y: auto;
+    scrollbar-width: none;
+    scroll-snap-type: x mandatory;
+}
+#reviews ul li {
+    width: 40em;
+    min-width: 40em;
+    min-height: 20em;
+    padding: 1em;
+    background-color: #fff;
+    border-radius: .5em;
+    scroll-snap-align: center;
+}
+#reviews ul li em {}
+#reviews ul li span {}
+#reviews ul li p {}
 
 /*----------SERVICIOS----------*/
 
 #servicios,
-#sobre-nosotros {
+#sobre-nosotros,
+#reviews,
+#reviews header {
     display: flex;
     align-items: center;
     justify-content: center;
