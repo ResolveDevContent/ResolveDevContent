@@ -326,12 +326,16 @@ body > header {
 
 #reviews {
     background-color: #313131;
+    padding: 1em;
 }
 #reviews header em {
     font-size: 2.5em;
     font-weight: 600;
+    color: var(--primary);
 }
-#reviews header span {}
+#reviews header span {
+    color: #fff;
+}
 #reviews ul {
     display: flex;
     align-items: start;
