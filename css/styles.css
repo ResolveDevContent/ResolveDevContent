@@ -347,7 +347,7 @@ body > header {
     scrollbar-width: none;
     scroll-snap-type: x mandatory;
 }
-#reviews ul li {
+#reviews ul .item {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -361,17 +361,45 @@ body > header {
     scroll-snap-align: center;
     margin: 0 .5em;
 }
-#reviews ul li em {
+#reviews .item aside {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+#reviews .item aside img {
+    width: 4em;
+    min-width: 4em;
+    height: 4em;
+    min-height: 4em;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+}
+#reviews .item aside > div {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+#reviews .item aside div div {
+    display: flex;
+    align-items: center;
+    margin-top: .5em;
+}
+#reviews .item div em {
+    font-size: 1.75em;
+    font-weight: 600;
+}
+#reviews .item > em {
     font-size: 1.75em;
     font-weight: 600;
     margin-bottom: .5em;
 }
-#reviews ul li span {
+#reviews .item span {
     font-size: 1.325em;
     color: #c1c1c1;
     font-weight: 600;
 }
-#reviews ul li p {
+#reviews .item p {
     font-size: 1.25em;
     margin-top: 2em;
 }
