@@ -326,7 +326,7 @@ body > header {
 
 #reviews {
     background-color: #313131;
-    padding: 2em 1em;
+    padding: 4em 1em;
     margin: 4em 0
 }
 #reviews header em {
@@ -355,14 +355,16 @@ body > header {
     width: 40em;
     min-width: 40em;
     min-height: 20em;
-    padding: 1em;
+    padding: 2em;
     background-color: #fff;
     border-radius: .5em;
     scroll-snap-align: center;
+    margin: 0 .5em;
 }
 #reviews ul li em {
     font-size: 1.75em;
     font-weight: 600;
+    margin-bottom: .5em;
 }
 #reviews ul li span {
     font-size: 1.325em;
@@ -371,6 +373,7 @@ body > header {
 }
 #reviews ul li p {
     font-size: 1.25em;
+    margin-top: 2em;
 }
 
 /*----------SERVICIOS----------*/
