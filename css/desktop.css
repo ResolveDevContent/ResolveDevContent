@@ -69,6 +69,28 @@
     width: 50%;
 }
 
+/*----------REVIEWS----------*/
+
+#reviews ul .item {
+    width: 40em;
+    min-width: 40em;
+}
+
+#reviews .item aside img {
+    width: 6em;
+    min-width: 6em;
+    height: 6em;
+    min-height: 6em;
+}
+
+#reviews .item div em {
+    font-size: 1.75em;
+}
+
+#reviews .item span {
+    font-size: 1.325em;
+}
+
 /*----------SERVICIOS----------*/
 
 #servicios > div{
