@@ -310,6 +310,23 @@ details.forEach((detail) => {
 
 //-----------------------------------------------------------------------------
 
+document
+    .querySelectorAll("#reviews")
+    .forEach(function(root) {
+        root.querySelectorAll(".list-reviews").forEach(function(ul) {
+            const li = ul.querySelectorAll('li');
+
+            if(li.length <= 3) {
+                ul.classList.add("threeLi");
+                return;
+            }
+
+            ul.classList.remove("threeLi")
+        })
+    })
+
+//-----------------------------------------------------------------------------
+
 let palabras = ['Desarrollo web.', 'Soluciones Tecnológicas.', 'Innovación.'],
     letras,
     i = 0,

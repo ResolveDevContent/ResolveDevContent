@@ -71,6 +71,10 @@
 
 /*----------REVIEWS----------*/
 
+#reviews > ul.threeLi {
+    justify-content: center;
+}
+
 #reviews ul .item {
     width: 40em;
     min-width: 40em;
