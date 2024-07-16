@@ -316,7 +316,7 @@ document
         root.querySelectorAll(".list-reviews").forEach(function(ul) {
             const li = ul.querySelectorAll('li');
 
-            if(li.length <= 3) {
+            if(li.length <= 2) {
                 ul.classList.add("threeLi");
                 return;
             }
