@@ -368,3 +368,15 @@ let typing = function () {
 typing();
 
 //-----------------------------------------------------------------------------
+
+/* ------- */
+
+var slideUp = {
+  delay: 175,
+  duration: 1500,
+  distance: "50%",
+  origin: "bottom",
+};
+
+ScrollReveal().reveal('.slideUp', slideUp);
+ScrollReveal().reveal('.card', {interval: 500, delay: 150});
