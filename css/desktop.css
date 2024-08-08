@@ -226,6 +226,23 @@
     display: flex;
 }
 
+#portafolio .list-portafolio > li.right {
+    flex-direction: row-reverse;
+}
+
+#portafolio .list-portafolio > li.right > aside {
+    margin-right: 3em;
+}
+#portafolio .list-portafolio > li.right > article {
+    transform: translateX(-5em);
+}
+#portafolio .list-portafolio > li.right > article:hover {
+    transform: translateX(1em) scale(1.05);
+}
+#portafolio .list-portafolio > li.right > article img {
+    border-radius: 0em 2em 2em 0em;
+}
+
 /*--------------------*/
 
 .start-animation.inView svg {
